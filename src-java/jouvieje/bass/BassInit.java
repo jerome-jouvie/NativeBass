@@ -119,7 +119,7 @@ public class BassInit {
 			libConfig.linux64Libraries = new PlatformLibrary(libName, lib+libName+so);
 			libConfig.macLibraries = new PlatformLibrary(libName, lib+libName+dylib);
 			
-			final boolean loaded = LibLoader.loadLibrary(libConfig, false);
+			final boolean loaded = LibLoader.loadLibrary(libConfig, true);
 			pluginsLoaded[i] = loaded;
 			if(!loaded) {
 				printlnDebug(libName+" not loaded");
