@@ -1,0 +1,12 @@
+#java
+*.class
+*.dex
+
+#eclipse
+bin/
+gen/
+.settings/
+local.properties
+lint.xml
+#os
+*.DS_Store
