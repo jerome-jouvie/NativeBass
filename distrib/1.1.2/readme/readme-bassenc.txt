@@ -1,37 +1,46 @@
 BASSenc 2.4
-Copyright (c) 2003-2011 Un4seen Developments Ltd. All rights reserved.
+Copyright (c) 2003-2015 Un4seen Developments Ltd. All rights reserved.
 
 Files that you should have found in the BASSenc package
 =======================================================
 Win32 version
 -------------
 BASSENC.TXT     This file
-BASSENC.DLL     The BASSenc module
+BASSENC.DLL     BASSenc module
 BASSENC.CHM     BASSenc documentation
+X64\
+  BASSENC.DLL     64-bit BASSenc module
 C\              C/C++ API and examples...
   BASSENC.H       BASSenc C/C++ header file
   BASSENC.LIB     BASSenc import library
-  BASSENC.DSW     Visual C++ workspace for examples
+  BASSENC.DSW     Visual C++ 6 workspace for examples
+  BASSENC.SLN     Visual C++ 2005 (and above) solution for examples
   MAKEFILE        Makefile for all examples
   MAKEFILE.IN     Makefile helper macros
+  X64\
+    BASSENC.LIB     64-bit BASSenc import library
   CAST\           Shoutcast/Icecast sourcing example
     CAST.C
     CAST.RC
     CAST.DSP
+    CAST.VCPROJ
     MAKEFILE
   CONTEST\        Console transcoding example
     CONTEST.C
     CONTEST.DSP
+    CONTEST.VCPROJ
     MAKEFILE
   RECTEST\        Recording example
     RECTEST.C
     RECTEST.RC
     RECTEST.DSP
+    RECTEST.VCPROJ
     MAKEFILE
   SERVER\         Server example
     SERVER.C
     SERVER.RC
     SERVER.DSP
+    SERVER.VCPROJ
     MAKEFILE
   BIN\            Precompiled examples
     CAST.EXE
@@ -68,7 +77,7 @@ NOTE: To build the examples, you will need to copy the BASS API into the
 MacOSX version
 --------------
 BASSENC.TXT     This file
-LIBBASSENC.DYLIB  The BASSenc module
+LIBBASSENC.DYLIB  BASSenc module
 BASSENC.CHM     BASSenc documentation
 BASSENC.H       BASSenc C/C++ header file
 MAKEFILE        Makefile for all examples
@@ -96,13 +105,13 @@ NOTE: To build the examples, you will need to copy the BASS API into the
 Linux version
 -------------
 BASSENC.TXT     This file
-LIBBASSENC.SO   The BASSenc module
+LIBBASSENC.SO   BASSenc module
 BASSENC.CHM     BASSenc documentation
 BASSENC.H       BASSenc C/C++ header file
 MAKEFILE        Makefile for all examples
 MAKEFILE.IN     Makefile helper macros
-X64
-  LIBBASSENC.SO   64-bit version of BASSenc module
+X64\
+  LIBBASSENC.SO   64-bit BASSenc module
 CAST\           Shoutcast/Icecast sourcing example
   CAST.C
   CAST.GLADE
@@ -180,6 +189,59 @@ There are of course bug fixes and other little improvements made along
 the way too! To make upgrading simpler, all functions affected by a
 change to the BASSenc interface are listed.
 
+2.4.12.7 - 7/5/2015
+-------------------
+* Admin username and password support for casting stats retrieval
+	BASS_Encode_CastGetStats
+* Checking in executable's directory for encoders on Linux/OSX (already so on Windows)
+	BASS_Encode_Start/Limit
+
+2.4.12 - 3/10/2014
+------------------
+* User-provided encoders
+	BASS_Encode_StartUser
+	ENCODERPROC
+
+2.4.11 - 31/10/2013
+-------------------
+* AIFF encoding/writing
+	BASS_ENCODE_AIFF (BASS_Encode_Start/Limit flag)
+	CONTEST example updated
+* Configurable Icecast source username
+	BASS_Encode_CastInit
+* Use of the BASS_CONFIG_NET_TIMEOUT setting when connecting to cast servers
+	BASS_Encode_CastInit
+	BASS_Encode_CastGetStats
+	BASS_Encode_CastSetTitle
+* Fix for port release issue when using multiple servers
+	BASS_Encode_ServerInit
+
+2.4.10 - 20/11/2012
+-------------------
+* WAVEFORMATEXTENSIBLE format chunk support
+	BASS_ENCODE_WFEXT (BASS_Encode_Start/Limit flag)
+* Unlimited casting stats length (was limited to 100KB)
+	BASS_Encode_CastGetStats
+* Fix for final output not being flushed from ACM encoder when freed
+	BASS_Encode_Stop/Ex
+* Shoutcast 2 metadata thread-safety fix
+	BASS_Encode_CastSendMeta
+	BASS_Encode_CastSetTitle
+
+2.4.9 - 3/2/2012
+----------------
+* Support for Shoutcast 2 servers
+	BASS_Encode_CastInit
+	BASS_Encode_CastSendMeta
+* Casting and server support for PCM encoding (allows sending of pre-encoded data)
+	BASS_Encode_CastInit
+	BASS_Encode_ServerInit
+* PCM encoding without writing to file
+	BASS_Encode_Start
+* Notification of an encoder being freed
+	BASS_ENCODE_NOTIFY_FREE (ENCODENOTIFYPROC status)
+* RECTEST example updated (C version) for better Windows Vista/7 support
+
 2.4.8 - 11/3/2011
 -----------------
 * Built-in streaming servers
@@ -224,6 +286,8 @@ change to the BASSenc interface are listed.
 
 2.4.5 - 26/10/2009
 ------------------
+* Casting via proxy servers
+	BASS_CONFIG_ENCODE_CAST_PROXY (BASS_SetConfigPtr option)
 * Fix for a potential casting timing issue on Windows
 	BASS_Encode_CastInit
 

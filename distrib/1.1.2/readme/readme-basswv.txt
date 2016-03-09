@@ -1,16 +1,20 @@
 BASSWV 2.4
-Copyright (c) 2007-2010 Un4seen Developments Ltd. All rights reserved.
+Copyright (c) 2007-2014 Un4seen Developments Ltd. All rights reserved.
 
 Files that you should have found in the BASSWV package
 ======================================================
 Win32 version
 -------------
 BASSWV.TXT      This file
-BASSWV.DLL      The BASSWV module
+BASSWV.DLL      BASSWV module
 BASSWV.CHM      BASSWV documentation
+X64\
+  BASSWV.DLL      64-bit BASSWV module
 C\              C/C++ API...
   BASSWV.H        BASSWV C/C++ header file
   BASSWV.LIB      BASSWV import library
+  X64\
+    BASSWV.LIB      64-bit BASSWV import library
 VB\             Visual Basic API...
   BASSWV.BAS      BASSWV Visual Basic module
 DELPHI\         Delphi API...
@@ -19,13 +23,19 @@ DELPHI\         Delphi API...
 MacOSX version
 --------------
 BASSWV.TXT      This file
-LIBBASSWV.DYLIB The BASSWV module
+LIBBASSWV.DYLIB BASSWV module
 BASSWV.CHM      BASSWV documentation
 BASSWV.H        BASSWV C/C++ header file
 MAKEFILE
 
-NOTE: To view the documentation, you will need a CHM viewer, such as CHMOX
-      which is included in the BASS package.
+Linux version
+-------------
+BASSWV.TXT      This file
+LIBBASSWV.SO    BASSWV module
+BASSWV.CHM      BASSWV documentation
+BASSWV.H        BASSWV C/C++ header file
+X64\
+  LIBBASSWV.SO    64-bit BASSWV module
 
 
 What's the point?
@@ -45,47 +55,12 @@ The plugin system (see BASS_PluginLoad) can be used to add WavPack support to
 the standard BASS stream (and sample) creation functions. Dedicated WavPack
 stream creation functions are also provided by BASSWV.
 
-Win32 version
--------------
-To use BASSWV with Borland C++ Builder, you'll first have to create a
-Borland C++ Builder import library for it. This is done by using the
-IMPLIB tool that comes with Borland C++ Builder. Simply execute this:
-
-	IMPLIB BASSWVBCB.LIB BASSWV.DLL
-
-... and then use BASSWVBCB.LIB in your projects to import BASSWV.
-
-To use BASSWV with LCC-Win32, you'll first have to create a compatible
-import library for it. This is done by using the PEDUMP and BUILDLIB
-tools that come with LCC-Win32. Run these 2 commands:
-
-	PEDUMP /EXP BASSWV.LIB > BASSWVLCC.EXP
-	BUILDLIB BASSWVLCC.EXP BASSWVLCC.LIB
-
-... and then use BASSWVLCC.LIB in your projects to import BASSWV.
-
-For the BASS functions that return strings (char*), VB users should use
-the VBStrFromAnsiPtr function to convert the returned pointer into a VB
-string.
+The usage information in the BASS.TXT file (from the BASS package) is also
+applicable to BASSWV and other add-ons.
 
 TIP: The BASSWV.CHM file should be put in the same directory as the BASS.CHM
      file, so that the BASSWV documentation can be accessed from within the
      BASS documentation.
-
-MacOSX version
---------------
-A separate "LIB" file is not required for OSX. Using XCode, you can simply
-add the DYLIB file to the project. Or using a makefile, you can build your
-programs like this, for example:
-
-	gcc yoursource -L. -lbass -lbasswv -o yourprog
-
-As with LIBBASS.DYLIB, the LIBBASSWV.DYLIB file must be put in the same
-directory as the executable (it can't just be somewhere in the path).
-
-LIBBASSWV.DYLIB is a universal binary, with support for both PowerPC and
-Intel Macs. If you want PowerPC-only or Intel-only versions, the included
-makefile can create them for you, by typing "make ppc" or "make i386".
 
 
 Latest Version
@@ -118,6 +93,23 @@ These are the major (and not so major) changes at each version stage.
 There are ofcourse bug fixes and other little improvements made along
 the way too! To make upgrading simpler, all functions affected by a
 change to the BASSWV interface are listed.
+
+2.4.5 - 22/7/2014
+-----------------
+* Updated for WavPack 4.70.0
+
+2.4.4 - 5/12/2012
+-----------------
+* Support for self-extracting EXE WavPack files
+	BASS_WV_StreamCreateFile/User/URL
+
+2.4.3 - 10/4/2012
+-----------------
+* Internet and buffered file streaming support
+	BASS_WV_StreamCreateURL
+	BASS_WV_StreamCreateUser
+* Support for 32-bit integer files
+* Built-in APE tag support removed (BASS handles them)
 
 2.4.2 - 16/3/2010
 -----------------

@@ -1,16 +1,20 @@
 BASSFLAC 2.4
-Copyright (c) 2004-2009 Un4seen Developments Ltd. All rights reserved.
+Copyright (c) 2004-2014 Un4seen Developments Ltd. All rights reserved.
 
 Files that you should have found in the BASSFLAC package
 ========================================================
 Win32 version
 -------------
 BASSFLAC.TXT    This file
-BASSFLAC.DLL    The BASSFLAC module
+BASSFLAC.DLL    BASSFLAC module
 BASSFLAC.CHM    BASSFLAC documentation
+X64\
+  BASSFLAC.DLL    64-bit BASSFLAC module
 C\              C/C++ API...
   BASSFLAC.H      BASSFLAC C/C++ header file
   BASSFLAC.LIB    BASSFLAC import library
+  X64\
+    BASSFLAC.LIB    64-bit BASSFLAC import library
 VB\             Visual Basic API...
   BASSFLAC.BAS    BASSFLAC Visual Basic module
 DELPHI\         Delphi API...
@@ -19,13 +23,19 @@ DELPHI\         Delphi API...
 MacOSX version
 --------------
 BASSFLAC.TXT    This file
-LIBBASSFLAC.DYLIB  The BASSFLAC module
+LIBBASSFLAC.DYLIB  BASSFLAC module
 BASSFLAC.CHM    BASSFLAC documentation
 BASSFLAC.H      BASSFLAC C/C++ header file
 MAKEFILE
 
-NOTE: To view the documentation, you will need a CHM viewer, such as CHMOX
-      which is included in the BASS package.
+Linux version
+-------------
+BASSFLAC.TXT    This file
+LIBBASSFLAC.SO  BASSFLAC module
+BASSFLAC.CHM    BASSFLAC documentation
+BASSFLAC.H      BASSFLAC C/C++ header file
+X64\
+  LIBBASSFLAC.SO  64-bit BASSFLAC module
 
 
 What's the point?
@@ -45,47 +55,12 @@ The plugin system (see BASS_PluginLoad) can be used to add FLAC support to
 the standard BASS stream (and sample) creation functions. Dedicated FLAC
 stream creation functions are also provided by BASSFLAC.
 
-Win32 version
--------------
-To use BASSFLAC with Borland C++ Builder, you'll first have to create a
-Borland C++ Builder import library for it. This is done by using the
-IMPLIB tool that comes with Borland C++ Builder. Simply execute this:
-
-	IMPLIB BASSFLACBCB.LIB BASSFLAC.DLL
-
-... and then use BASSFLACBCB.LIB in your projects to import BASSFLAC.
-
-To use BASSFLAC with LCC-Win32, you'll first have to create a compatible
-import library for it. This is done by using the PEDUMP and BUILDLIB
-tools that come with LCC-Win32. Run these 2 commands:
-
-	PEDUMP /EXP BASSFLAC.LIB > BASSFLACLCC.EXP
-	BUILDLIB BASSFLACLCC.EXP BASSFLACLCC.LIB
-
-... and then use BASSFLACLCC.LIB in your projects to import BASSFLAC.
-
-For the BASS functions that return strings (char*), VB users should use
-the VBStrFromAnsiPtr function to convert the returned pointer into a VB
-string.
+The usage information in the BASS.TXT file (from the BASS package) is also
+applicable to BASSFLAC and other add-ons.
 
 TIP: The BASSFLAC.CHM file should be put in the same directory as the BASS.CHM
      file, so that the BASSFLAC documentation can be accessed from within the
      BASS documentation.
-
-MacOSX version
---------------
-A separate "LIB" file is not required for OSX. Using XCode, you can simply
-add the DYLIB file to the project. Or using a makefile, you can build your
-programs like this, for example:
-
-	gcc yoursource -L. -lbass -lbassflac -o yourprog
-
-As with LIBBASS.DYLIB, the LIBBASSFLAC.DYLIB file must be put in the same
-directory as the executable (it can't just be somewhere in the path).
-
-LIBBASSFLAC.DYLIB is a universal binary, with support for both PowerPC and
-Intel Macs. If you want PowerPC-only or Intel-only versions, the included
-makefile can create them for you, by typing "make ppc" or "make i386".
 
 
 Latest Version
@@ -118,6 +93,14 @@ These are the major (and not so major) changes at each version stage.
 There are of course bug fixes and other little improvements made along
 the way too! To make upgrading simpler, all functions affected by a
 change to the BASSFLAC interface are listed.
+
+2.4.2 - 28/11/2014
+------------------
+* Updated to libFLAC 1.3.1
+
+2.4.1.4 - 1/8/2014
+------------------
+* Ogg FLAC support fix on 64-bit OSX
 
 2.4.1 - 8/12/2009
 -----------------
@@ -184,8 +167,8 @@ change to the BASSFLAC interface are listed.
 
 Credits
 =======
-FLAC decoding is based on libFLAC, Copyright (c) 2000-2007 Josh Coalson
-Ogg FLAC support uses libogg, Copyright (c) 2002-2004 Xiph.org Foundation
+FLAC decoding is based on libFLAC, Copyright (c) 2000-2009 Josh Coalson
+Ogg FLAC support uses libogg, Copyright (c) 1994-2011 Xiph.Org Foundation
 
 
 Bug reports, Suggestions, Comments, Enquiries, etc...

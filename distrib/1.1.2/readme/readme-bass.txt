@@ -1,94 +1,128 @@
 BASS 2.4
-Copyright (c) 1999-2011 Un4seen Developments Ltd. All rights reserved.
+Copyright (c) 1999-2014 Un4seen Developments Ltd. All rights reserved.
 
 Files that you should have found in the BASS package
 ====================================================
 Win32 version
 -------------
 BASS.TXT        This file
-BASS.DLL        The BASS module
+BASS.DLL        BASS module
 BASS.CHM        BASS documentation
-MP3-FREE
+MP3-FREE\
   BASS.DLL        BASS module using the OS's MP3 decoder
+X64\
+  BASS.DLL        64-bit BASS module
+  MP3-FREE
+    BASS.DLL        64-bit BASS module using the OS's MP3 decoder
 C\              C/C++ API and examples...
   BASS.H          BASS C/C++ header file
   BASS.LIB        BASS import library
-  BASS.DSW        Visual C++ workspace for examples
+  BASS.DSW        Visual C++ 6 workspace for examples
+  BASS.SLN        Visual C++ 2005 (and above) solution for examples
   MAKEFILE        Makefile for all examples
   MAKEFILE.IN     Makefile helper macros
+  X64\
+    BASS.LIB        64-bit BASS import library
   3DTEST\         3D/EAX example
     3DTEST.C
     3DTEST.RC
     3DTEST.DSP
+    3DTEST.VCPROJ
     MAKEFILE
   BASSTEST\       Simple playback example
     BASSTEST.C
     BASSTEST.RC
     BASSTEST.DSP
+    BASSTEST.VCPROJ
     MAKEFILE
   CONTEST\        Console example
     CONTEST.C
     CONTEST.DSP
+    CONTEST.VCPROJ
     MAKEFILE
   CUSTLOOP\       Custom looping example
     CUSTLOOP.C
     CUSTLOOP.DSP
+    CUSTLOOP.VCPROJ
     MAKEFILE
   DSPTEST\        DSP example
     DSPTEST.C
     DSPTEST.RC
     DSPTEST.DSP
+    DSPTEST.VCPROJ
     MAKEFILE
   FXTEST\         DX8 effect example
     FXTEST.C
     FXTEST.RC
     FXTEST.DSP
+    FXTEST.VCPROJ
+    MAKEFILE
+  LIST\           Device list example
+    LIST.C
+    LIST.DSP
+    LIST.VCPROJ
     MAKEFILE
   LIVEFX\         Full-duplex example
     LIVEFX.C
     LIVEFX.RC
     LIVEFX.DSP
+    LIVEFX.VCPROJ
     MAKEFILE
   LIVESPEC\       "Live" version of spectrum analyser example
     LIVESPEC.C
     LIVESPEC.DSP
+    LIVESPEC.VCPROJ
+    MAKEFILE
+  MODTEST\         MOD music example
+    MODTEST.C
+    MODTEST.RC
+    MODTEST.DSP
+    MODTEST.VCPROJ
     MAKEFILE
   MULTI\          Multiple device example
     MULTI.C
     MULTI.RC
     MULTI.DSP
+    MULTI.VCPROJ
     MAKEFILE
   NETRADIO\       Internet streaming example
     NETRADIO.C
     NETRADIO.RC
     NETRADIO.DSP
+    NETRADIO.VCPROJ
     MAKEFILE
   PLUGINS\        Plugins example
     PLUGINS.C
     PLUGINS.RC
     PLUGINS.DSP
+    PLUGINS.VCPROJ
     MAKEFILE
   RECTEST\        Recording example
     RECTEST.C
     RECTEST.RC
     RECTEST.DSP
+    RECTEST.VCPROJ
     MAKEFILE
   SPEAKERS\       Multi-speaker example
     SPEAKERS.C
     SPEAKERS.RC
     SPEAKERS.DSP
+    SPEAKERS.VCPROJ
     MAKEFILE
   SPECTRUM\       Spectrum analyser example
     SPECTRUM.C
     SPECTRUM.DSP
+    SPECTRUM.VCPROJ
     MAKEFILE
   SYNTH\          Low latency custom streaming example
     SYNTH.C
     SYNTH.DSP
+    SYNTH.VCPROJ
     MAKEFILE
   WRITEWAV\       WAVE writer example
     WRITEWAV.C
     WRITEWAV.DSP
+    WRITEWAV.VCPROJ
     MAKEFILE
   BIN\            Precompiled examples
     3DTEST.EXE
@@ -97,8 +131,10 @@ C\              C/C++ API and examples...
     CUSTLOOP.EXE
     DSPTEST.EXE
     FXTEST.EXE
+    LIST.EXE
     LIVEFX.EXE
     LIVESPEC.EXE
+    MODTEST.EXE
     MULTI.EXE
     NETRADIO.EXE
     RECTEST.EXE
@@ -106,69 +142,6 @@ C\              C/C++ API and examples...
     SPECTRUM.EXE
     SYNTH.EXE
     WRITEWAV.EXE
-VB\             Visual Basic API and examples...
-  BASS.BAS        BASS Visual Basic module
-  3DTEST\         3D/EAX example
-    PRJ3DTEST.VBP
-    PRJ3DTEST.FRM
-    PRJDEVICE.FRM
-  BASSTEST\       Simple playback example
-    PRJBASSTEST.VBP
-    FRMBASSTEST.FRM
-  CUSTLOOP\       Custom looping example
-    PRJCUSTLOOP.VBP
-    FRMCUSTLOOP.FRM
-    MODCUSTLOOP.BAS
-  DSPTEST\        DSP example
-    PRJDSPTEST.VBP
-    FRMDSPTEST.FRM
-    MODDSPTEST.BAS
-  FXTEST\         DX8 effect example
-    PRJFXTEST.VBP
-    FRMFXTEST.FRM
-  LIVEFX\         Full-duplex example
-    PRJLIVEFX.VBP
-    FRMLIVEFX.FRM
-    MODLIVEFX.BAS
-  LIVESPEC\       "Live" version of spectrum analyser example
-    PRJLIVESPEC.VBP
-    FRMLIVESPEC.FRM
-    MODLIVESPEC.BAS
-  MULTI\          Multiple device example
-    PRJMULTI.VBP
-    FRMMULTI.FRM
-    FRMDEVICE.FRM
-  NETRADIO\       Internet streaming example
-    PRJNETRADIO.VBP
-    FRMNETRADIO.FRM
-    MODNETRADIO.BAS
-    CLSFILEIO.CLS
-  PLUGINS\        Plugins example
-    PRJPLUGINS.VBP
-    FRMPLUGINS.FRM
-  RECTEST\        Recording example
-    PRJRECTEST.VBP
-    FRMRECTEST.FRM
-    MODRECTEST.BAS
-  SPEAKERS\       Multi-speaker example
-    PRJSPEAKERS.VBP
-    FRMSPEAKERS.FRM
-  SPECTRUM\       Spectrum analyser example
-    PRJSPECTRUM.VBP
-    FRMSPECTRUM.FRM
-    MODSPECTRUM.BAS
-  SYNTH\          Low latency custom streaming example
-    PRJSYNTH.VBP
-    FRMSYNTH.FRM
-    MODSYNTH.BAS
-  WRITEWAV\       WAVE writer example
-    PRJWRITEWAVE.VBP
-    PRJWRITEWAVE.FRM
-  MEMORY\         Playing from memory example by Jobnik
-    PRJMEMORY.VBP
-    FRMMEMORY.FRM
-    SYNCTEST.BAS
-    CBASS_TIME.CLS
 DELPHI\         Delphi API and examples...
   BASS.PAS        BASS Delphi unit
   3DTEST\         3D/EAX example
@@ -243,37 +216,69 @@ DELPHI\         Delphi API and examples...
     WRITEWAV.DPR
     UNITMAIN.PAS
     UNITMAIN.DFM
-MASM\           MASM API and examples...
-  BASS.INC        BASS MASM include file
+VB\             Visual Basic API and examples...
+  BASS.BAS        BASS Visual Basic module
   3DTEST\         3D/EAX example
-    3DTEST.ASM
-    RES.RC
-    COMPILE.BAT
+    PRJ3DTEST.VBP
+    PRJ3DTEST.FRM
+    PRJDEVICE.FRM
   BASSTEST\       Simple playback example
-    BASSTEST.ASM
-    RES.RC
-    COMPILE.BAT
+    PRJBASSTEST.VBP
+    FRMBASSTEST.FRM
+  CUSTLOOP\       Custom looping example
+    PRJCUSTLOOP.VBP
+    FRMCUSTLOOP.FRM
+    MODCUSTLOOP.BAS
+  DSPTEST\        DSP example
+    PRJDSPTEST.VBP
+    FRMDSPTEST.FRM
+    MODDSPTEST.BAS
+  FXTEST\         DX8 effect example
+    PRJFXTEST.VBP
+    FRMFXTEST.FRM
+  LIVEFX\         Full-duplex example
+    PRJLIVEFX.VBP
+    FRMLIVEFX.FRM
+    MODLIVEFX.BAS
+  LIVESPEC\       "Live" version of spectrum analyser example
+    PRJLIVESPEC.VBP
+    FRMLIVESPEC.FRM
+    MODLIVESPEC.BAS
+  MULTI\          Multiple device example
+    PRJMULTI.VBP
+    FRMMULTI.FRM
+    FRMDEVICE.FRM
   NETRADIO\       Internet streaming example
-    NETRADIO.ASM
-    RES.RC
-    COMPILE.BAT
-  PLAYER\         Example MOD player
-    PLAYER.EXE
-    PLAYER.ASM
-    RSRC.RC
-    TOOLBAR.BMP
-    COMPILE.BAT
+    PRJNETRADIO.VBP
+    FRMNETRADIO.FRM
+    MODNETRADIO.BAS
+    CLSFILEIO.CLS
+  PLUGINS\        Plugins example
+    PRJPLUGINS.VBP
+    FRMPLUGINS.FRM
+  RECTEST\        Recording example
+    PRJRECTEST.VBP
+    FRMRECTEST.FRM
+    MODRECTEST.BAS
+  SPEAKERS\       Multi-speaker example
+    PRJSPEAKERS.VBP
+    FRMSPEAKERS.FRM
   SPECTRUM\       Spectrum analyser example
-    SPECTRUM.ASM
-	MATH.INC
-    RES.RC
-	NUMB_16.BMP
-    COMPILE.BAT
+    PRJSPECTRUM.VBP
+    FRMSPECTRUM.FRM
+    MODSPECTRUM.BAS
   SYNTH\          Low latency custom streaming example
-    SYNTH.ASM
-	MATH.INC
-    RES.RC
-    COMPILE.BAT
+    PRJSYNTH.VBP
+    FRMSYNTH.FRM
+    MODSYNTH.BAS
+  WRITEWAV\       WAVE writer example
+    PRJWRITEWAVE.VBP
+    PRJWRITEWAVE.FRM
+  MEMORY\         Playing from memory example by Jobnik
+    PRJMEMORY.VBP
+    FRMMEMORY.FRM
+    SYNCTEST.BAS
+    CBASS_TIME.CLS
 
 NOTE: You may need to "Unblock" the BASS.CHM file in its "Properties" to
       view it on Windows 7. The documentation can also be viewed online at
@@ -285,23 +290,23 @@ NOTE: To run the example EXEs, first you will need to copy BASS.DLL into the
 MacOSX version
 --------------
 BASS.TXT        This file
-LIBBASS.DYLIB   The BASS module
+LIBBASS.DYLIB   BASS module
 BASS.CHM        BASS documentation
 CHMOX.APP       CHM file viewer
 BASS.H          BASS C/C++ header file
 MAKEFILE        Makefile for all examples
 MAKEFILE.IN     Makefile helper macros
 BASS.XCODEPROJ  Xcode project for examples
-MP3-FREE
+MP3-FREE\
   LIBBASS.DYLIB   BASS module using the OS's MP3 decoder
 3DTEST\         3D example
   3DTEST.C
-  MAKEFILE
   3DTEST.NIB
+  MAKEFILE
 BASSTEST\       Simple playback example
   BASSTEST.C
-  MAKEFILE
   BASSTEST.NIB
+  MAKEFILE
 CONTEST\        Console example
   CONTEST.C
   MAKEFILE
@@ -310,42 +315,49 @@ CUSTLOOP\       Custom looping example
   MAKEFILE
 DSPTEST\        DSP example
   DSPTEST.C
-  MAKEFILE
   DSPTEST.NIB
+  MAKEFILE
 FXTEST\         DX8 effect example
   FXTEST.C
-  MAKEFILE
   FXTEST.NIB
+  MAKEFILE
+LIST\           Device list example
+  LIST.C
+  MAKEFILE
 LIVESPEC\       "Live" version of spectrum analyser example
   LIVESPEC.C
   MAKEFILE
+MODTEST\        MOD music example
+  MODTEST.C
+  MODTEST.NIB
+  MAKEFILE
 MULTI\          Multiple device example
   MULTI.C
-  MAKEFILE
   MULTI.NIB
+  MAKEFILE
 NETRADIO\       Internet streaming example
   NETRADIO.C
-  MAKEFILE
   NETRADIO.NIB
+  MAKEFILE
 PLUGINS\        Plugins example
   PLUGINS.C
-  MAKEFILE
   PLUGINS.NIB
+  MAKEFILE
 RECTEST\        Recording example
   RECTEST.C
-  MAKEFILE
   RECTEST.NIB
+  MAKEFILE
 SPEAKERS\       Multi-speaker example
   SPEAKERS.C
-  MAKEFILE
   SPEAKERS.NIB
+  MAKEFILE
 SPECTRUM\       Spectrum analyser example
   SPECTRUM.C
   MAKEFILE
 SYNTH\          Low latency custom streaming example
   SYNTH.C
-  MAKEFILE
   SYNTH.NIB
+  MAKEFILE
 WRITEWAV\       WAVE writer example
   WRITEWAV.C
   MAKEFILE
@@ -357,17 +369,19 @@ NOTE: To view the documentation, you will need a CHM viewer, such as the
 Linux version
 -------------
 BASS.TXT        This file
-LIBBASS.SO      The BASS module
+LIBBASS.SO      BASS module
 BASS.CHM        BASS documentation
 BASS.H          BASS C/C++ header file
 MAKEFILE        Makefile for all examples
 MAKEFILE.IN     Makefile helper macros
-MP3-FREE
+MP3-FREE\
   LIBBASS.SO      BASS module using the OS's MP3 decoder
-X64
-  LIBBASS.SO      64-bit version of BASS module
+X64\
+  LIBBASS.SO      64-bit BASS module
   MP3-FREE
-    LIBBASS.SO      64-bit version of BASS module using the OS's MP3 decoder
+    LIBBASS.SO      64-bit BASS module using the OS's MP3 decoder
+PASCAL\
+  BASS.PAS        BASS Delphi/Pascal unit
 3DTEST\         3D example
   3DTEST.C
   MAKEFILE
@@ -390,9 +404,16 @@ FXTEST\         DX8 effect example
   FXTEST.C
   MAKEFILE
   FXTEST.GLADE
+LIST\           Device list example
+  LIST.C
+  MAKEFILE
 LIVESPEC\       "Live" version of spectrum analyser example
   LIVESPEC.C
   MAKEFILE
+MODTEST\        MOD music example
+  MODTEST.C
+  MAKEFILE
+  MODTEST.GLADE
 MULTI\          Multiple device example
   MULTI.C
   MAKEFILE
@@ -446,13 +467,13 @@ Win32 version
 -------------
 BASS requires DirectX for playback/recording, but decoding is still
 possible without it. DirectX has been included with all Windows versions
-since Windows 98.
+since Windows 98. 32-bit and 64-bit Windows are supported.
 
 MacOSX version
 --------------
 BASS uses CoreAudio for playback/recording, so there are no special
 library/driver requirements. 32-bit (i386 & ppc) and 64-bit (x86_64)
-architectures are supported in a single universal library. OSX 10.3 or
+architectures are supported in a single universal library. OSX 10.4 or
 above is recommended.
 
 Linux version
@@ -536,8 +557,8 @@ functions that you are using have been affected by a change.
 
 Win32 version
 -------------
-C/C++, Visual Basic, Delphi and MASM APIs and example projects are provided.
-To use BASS with another language you will first have to convert the header
+C/C++, Visual Basic, and Delphi APIs and example projects are provided. To
+use BASS with another language you will first have to convert the header
 file. Or, as a last resort, you could use LoadLibrary and GetProcAddress.
 
 The downside is that you have to manually import each function that you
@@ -586,6 +607,9 @@ included makefile can be used extract the wanted ones. It will also process
 any BASS add-ons placed in the same directory. Type "make ppc", "make i386"
 or "make x86_64" to extract a particular architecture. "make intel" can
 be used to extract the i386 and x86_64 architectures together.
+
+NOTE: Apple's App Store does not support the ppc architecture, so that will
+      need to be removed from the BASS binary before submitting apps.
 
 Linux version
 -------------
@@ -702,6 +726,134 @@ There are of course bug fixes and other little improvements made along
 the way too! To make upgrading simpler, all functions affected by a
 change to the BASS interface are listed.
 
+2.4.11 - 22/12/2014
+-------------------
+* Support for custom HTTP request headers
+	BASS_StreamCreateURL
+* HTTPS support on Linux/Android
+	BASS_StreamCreateURL
+* Redirection HTTP headers provided during connection
+	BASS_STREAM_STATUS (BASS_StreamCreateURL flag)
+	DOWNLOADPROC
+* Adjustable stalled internet stream resumption buffer level
+	BASS_ATTRIB_NET_RESUME (BASS_ChannelSetAttribute option)
+* Extended level retrieval inc. multi-channel and RMS options
+	BASS_ChannelGetLevelEx
+* Inexact/faster seeking
+	BASS_POS_INEXACT (BASS_ChannelSetPosition flag)
+* Post-stream creation scanning (seek table building)
+	BASS_POS_SCAN (BASS_ChannelSetPosition flag)
+* Extended attribute support
+	BASS_ChannelGet/SetAttributeEx
+* Scanned info retrieval and setting
+	BASS_ATTRIB_SCANINFO (BASS_ChannelGet/SetAttributeEx option)
+* Built-in ADPCM WAVE file support on Linux/Android/WinCE
+	BASS_StreamCreateFile/User/URL
+	BASS_SampleLoad
+* Active MOD channel count retrieval
+	BASS_ATTRIB_MUSIC_ACTIVE (BASS_ChannelGetAttribute option)
+* Fractional sample rates
+	BASS_ATTRIB_FREQ (BASS_ChannelSetAttribute option)
+* Device type information
+	BASS_DEVICE_TYPE_xxx (BASS_DEVICEINFO flags)
+* Unicode support for recording input names
+	BASS_CONFIG_UNICODE
+	BASS_RecordGetInputName
+* File size retrieval
+	BASS_FILEPOS_SIZE (BASS_StreamGetFilePosition mode)
+* Asynchronous file reading buffer level retrieval
+	BASS_FILEPOS_ASYNCBUF (BASS_StreamGetFilePosition mode)
+* MPEG data search limit raised to 1MB
+	BASS_CONFIG_VERIFY
+* Separate MPEG data search limit for internet/buffered streams
+	BASS_CONFIG_VERIFY_NET
+* Support for iTunes gapless info with Media Foundation and CoreAudio codecs
+	BASS_StreamCreateFile/User
+* Airplay receiver enumeration and selection on OSX
+	BASS_DEVICES_AIRPLAY (BASS_GetDeviceInfo flag)
+	BASS_CONFIG_AIRPLAY (BASS_SetConfig option)
+* Media Foundation playback of audio from videos is now optional
+	BASS_CONFIG_MF_VIDEO (BASS_SetConfig option)
+* Optional floating-point or fixed-point data retrieval on Android/WinCE
+	BASS_DATA_FLOAT/FIXED (BASS_ChannelGetData flags)
+* Continuous output when nothing is playing on Linux/Android/WinCE
+	BASS_CONFIG_DEV_NONSTOP (BASS_SetConfig option)
+* Fix for decoding channels being ended when stopping the output device
+	BASS_Stop
+* Fix for Media Foundation internet/buffered streaming on Windows 8
+	BASS_StreamCreateURL
+	BASS_StreamCreateFileUser
+* Improved compatibility with recent PulseAudio versions on Linux
+* LIST and MODTEST examples added
+* MASM API and examples removed (available as separate download)
+
+2.4.10 - 16/2/2013
+------------------
+* Asynchronous file reading/buffering
+	BASS_ASYNCFILE (BASS_StreamCreateFile/User flag)
+	BASS_CONFIG_ASYNCFILE_BUFFER (BASS_SetConfig option)
+* Support for chained OGG files (multiple logical bitstreams)
+	BASS_StreamCreateFile/User
+	BASS_CONFIG_OGG_PRESCAN (BASS_SetConfig option)
+	BASS_POS_OGG (BASS_ChannelSetPosition/ChannelGetLength mode)
+* OGG logical bitstream syncs are no longer automatically "mixtime"
+	BASS_SYNC_OGG_CHANGE (BASS_ChannelSetSync type)
+* Support for Soundtracker MOD files
+	BASS_MusicLoad
+* Complex FFT data
+	BASS_DATA_FFT_COMPLEX (BASS_ChannelGetData flag)
+* Volume levels above 1.0 for decoding channels
+	BASS_ATTRIB_VOL (BASS_ChannelSetAttribute option)
+* Recording device channel count retrieval on Windows/OSX/iOS
+	BASS_RECORDINFO (formats member)
+* Minimum recording period reduced to 5ms
+	BASS_RecordStart
+* Recording device period adjustment on OSX
+	BASS_RecordStart
+* Device UID retrieval on OSX
+	BASS_DEVICEINFO (driver member)
+* The desktop window handle is used when none is provided
+	BASS_Init
+
+2.4.9 - 3/5/2012
+----------------
+* Improved and adjustable sample rate conversion quality
+	BASS_ATTRIB_SRC (BASS_ChannelSetAttribute option)
+	BASS_CONFIG_SRC/_SAMPLE (BASS_SetConfig options)
+* Support for buffered file & internet streams with CoreAudio codecs on OSX/iOS
+	BASS_StreamCreateURL
+	BASS_StreamCreateUser
+* Data and level retrieval from sample channels
+	BASS_ChannelGetData
+	BASS_ChannelGetLevel
+* Oldest sample channel will be overridden when there are multiple candidates
+	BASS_SampleGetChannel
+* Use of the device's output rate with MODs
+	BASS_MusicLoad
+* Optional device output rate setting on OSX/iOS
+	BASS_DEVICE_FREQ (BASS_Init flag)
+* UTF-8 device information on Windows
+	BASS_CONFIG_UNICODE (BASS_SetConfig option)
+* Speaker assignment with panning/balance control on Windows Vista/7
+	BASS_CONFIG_VISTA_SPEAKERS (BASS_SetConfig option)
+	BASS_ATTRIB_PAN (BASS_ChannelGet/Set/SlideAttribute option)
+* Push stream queue level can be checked after using BASS_STREAMPROC_END
+	BASS_StreamPutData
+* Support for ALSA subdevices on Linux
+	BASS_Init
+	BASS_GetDeviceInfo
+	BASS_RecordInit
+	BASS_RecordGetDeviceInfo
+* Device list fix on 64-bit OSX
+	BASS_GetDeviceInfo
+	BASS_RecordGetDeviceInfo
+* BASS_UNICODE support fix on Linux
+	BASS_PluginLoad
+* Internet streaming tweaks/fixes on Windows
+* SYNTH example updated to use device output rate
+* RECTEST example updated (C version) for better Windows Vista/7 support
+* Documentation updated with platform-specific info for Android
+
 2.4.8 - 29/8/2011
 -----------------
 * Support for Media Foundation codecs on Windows 7 and updated Vista
@@ -740,7 +892,7 @@ change to the BASS interface are listed.
 * 16384 sample FFT
 	BASS_DATA_FFT16384 (BASS_ChannelGetData flag)
 * Support for AIFF files larger than 4GB
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 * Acceptance of self-signed and invalid certificates
 	BASS_StreamCreateURL
 * Internet stream reading timeout
@@ -765,7 +917,7 @@ change to the BASS interface are listed.
 * Decoding position retrieval
 	BASS_POS_DECODE (BASS_ChannelGetPosition flag)
 * Support for OGG 6/7.1 channel configs
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 * Support for setting syncs within mixtime SYNCPROCs
 	BASS_ChannelSetSync
 * Support for setting additional DSP/FX within DSPPROCs
@@ -780,10 +932,10 @@ change to the BASS interface are listed.
 2.4.5 - 18/12/2009
 ------------------
 * Support for little-endian AIFF files
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 * Support for 64-bit floating-point WAVE/AIFF files
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 * Input volume retrieval failure results in a reading of -1 instead of 1
 	BASS_RecordGetInput
@@ -795,7 +947,7 @@ change to the BASS interface are listed.
 * Fix for deferred input settings on Vista
 	BASS_RecordSetInput
 * Windows MP3 codec given preference over other installed MP3 codecs (MP3-FREE version)
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 
 2.4.4 - 13/10/2009
@@ -992,7 +1144,7 @@ change to the BASS interface are listed.
 * Improved stall handling
 	BASS_SYNC_STALL
 * Invalid decoding channel flags produce an error instead of being ignored
-	BASS_StreamCreate/File/User/Url
+	BASS_StreamCreate/File/User/URL
 	BASS_MusicLoad
 
 2.3.0.2 - 22/1/2007
@@ -1075,7 +1227,7 @@ change to the BASS interface are listed.
 * Add-on plugin system
 	BASS_PluginLoad
 	BASS_PluginFree
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 	PLUGINS example added
 * MOD position & syncing in bytes
@@ -1091,13 +1243,13 @@ change to the BASS interface are listed.
 	BASS_StreamGetLength *removed*
 	BASS_MusicGetLength *removed*
 * Support for AIFF files
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 * Support for 24 and 32-bit (integer) WAV files
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 	BASS_SampleLoad
 * WAV files are no longer converted to the "device" resolution
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 * Recording master control
 	BASS_RecordGetInput
 	BASS_RecordSetInput
@@ -1247,7 +1399,7 @@ change to the BASS interface are listed.
 	BASS_RECORD_PAUSE (BASS_RecordStart flag)
 * Multi-channel streams, inc. support for multichannel OGG & WAV files
 	BASS_StreamCreate
-	BASS_StreamCreateFile/User/Url
+	BASS_StreamCreateFile/User/URL
 * FFT for individual channels, inc. multi-channel streams
 	BASS_DATA_FFT_INDIVIDUAL (BASS_ChannelGetData flag)
 	BASS_DATA_FFT512S/1024S/2048S/4096S *removed*
@@ -1357,7 +1509,7 @@ change to the BASS interface are listed.
 1.8 - 9/3/2003
 --------------
 * 32-bit floating-point channels
-	BASS_SAMPLE_FLOAT (BASS_StreamCreate/URL/File flag)
+	BASS_SAMPLE_FLOAT (BASS_StreamCreate/File/URL flag)
 	BASS_MUSIC_FLOAT (BASS_MusicLoad flag)
 	BASS_SAMPLE_FLOAT (BASS_RecordStart flag)
 	BASS_DEVICE_FLOATDSP (BASS_Init flag)

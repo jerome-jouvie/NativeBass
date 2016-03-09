@@ -1,6 +1,6 @@
 BASS_AAC 2.4
 
-© 2002-2006, MaresWEB (http://www.maresweb.de). All rights reserved.
+© 2002-2012, Sebastian Andersson (sebastian.andersson@gmail.com). All rights reserved.
 Portions © 2006, M. Bakker, Nero AG. All rights reserved.
 
 All trademarks and other registered names contained in the BASS_AAC

@@ -16,6 +16,7 @@ extern "C" {
 
 
 HSTREAM BASSSPXDEF(BASS_SPX_StreamCreateFile)(BOOL mem, const void *file, QWORD offset, QWORD length, DWORD flags);
+HSTREAM BASSSPXDEF(BASS_SPX_StreamCreateURL)(const char *url, DWORD offset, DWORD flags, DOWNLOADPROC *proc, void *user);
 HSTREAM BASSSPXDEF(BASS_SPX_StreamCreateFileUser)(DWORD system, DWORD flags, const BASS_FILEPROCS *procs, void *user);
 
 #ifdef __cplusplus

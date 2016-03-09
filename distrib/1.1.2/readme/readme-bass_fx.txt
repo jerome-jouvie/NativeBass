@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
-                          (: -= BASS_FX v2.4.7 =- :)
-                                -============-
-            Copyright (c) 2002-2011 JOBnik! [Arthur Aminov, ISRAEL]
+                        (: -= BASS_FX v2.4.11.1 =- :)
+                             -=================-
+            Copyright (c) 2002-2014 JOBnik! [Arthur Aminov, ISRAEL]
                              All rights reserved!
 -------------------------------------------------------------------------------
 
@@ -22,9 +22,16 @@ BASS_FX.DLL      The BASS_FX module
 BASS_FX.CHM      BASS_FX documentation
 File_ID.Diz      BBS description file
 
+x64\
+  BASS_FX.DLL    64-bit BASS_FX module
+
 C\               C/C++ APIs and samples
   BASS_FX.H        BASS_FX C/C++ header file
   BASS_FX.LIB      BASS_FX import library
+  x64\
+    BASS_FX.LIB    64-bit BASS_FX import library
+  SAFESEH\
+    BASS_FX.LIB    SAFESEH compatible BASS_FX import library
 
   bpm\             BPM example
     bpm.c
@@ -35,6 +42,11 @@ C\               C/C++ APIs and samples
     dsp.c
     dsp.h
     dsp.rc
+
+  freeverb\        Freeverb example
+    freeverb.c
+    freeverb.h
+    freeverb.rc
 
   reverse\         Reverse example
     reverse.c
@@ -228,6 +240,155 @@ stage. There are ofcourse bug fixes and other little improvements
 made along the way too! To make upgrading simpler, all functions
 affected by a change to the BASS_FX interface are listed.
 
+2.4.11.1 - 24/12/2014
+---------------------
+* BASS_FX:
+  * Added support for BASS 2.4.11, BASS_DATA_FIXED flag is used in Android, WinCE and Linux ARM platforms.
+  * Documentation is updated.
+  * iOS, added "x86_64" simulator architecture.
+
+* Tempo:
+  * Fixed "Segmentation fault" on x64 Linux system.
+
+* DSP:
+  * Android, fixed "BASS_FX_BFX_ECHO4" effect as reported in this thread:
+    http://www.un4seen.com/forum/?topic=13225.msg112373#msg112373
+
+2.4.11 - 02/09/2014
+-------------------
+* BASS_FX:
+   * Fixed an issue on OSX (The Xcode project's "Installation Directory" setting set to "@loader_path" instead of "@executable_path").
+   * Tempo/Reverse fixed a thread-safety crash.
+   * Tempo/Reverse added CTYPE info for these streams.
+   * Android, added "x86" architecture support (some effects are buggy, will be fixed soon).
+   * iOS, added "arm64" architecture support.
+   * Fixed Delphi/Pascal unit by changing "FLOAT" to "Single".
+   * Added C/C++ "freeverb" example.
+
+* Tempo:
+   * Updated to latest SoundTouch library version 1.8.0
+   * Fixed a crash when using syncs on tempo, as described in this thread: http://www.un4seen.com/forum/?topic=15708.0
+   * Added 3 interpolation algorithms to set using BASS_FX_TEMPO_ALGO_XXX flags (BASS_FX_TempoCreate):
+      * BASS_FX_TEMPO_ALGO_LINEAR
+      * BASS_FX_TEMPO_ALGO_CUBIC   (default)
+      * BASS_FX_TEMPO_ALGO_SHANNON
+
+* DSP:
+   * Fixed a bug in BASS_FX_BFX_VOLUME_ENV effect with the "bFollow" option on mobile devices,
+     as described in this thread http://www.un4seen.com/forum/?topic=15866
+   * Added new effects:
+     * BASS_FX_BFX_PITCHSHIFT, that uses FFT for its pitch shifting while maintaining duration.
+     * BASS_FX_BFX_FREEVERB, a reverb effect.
+
+2.4.10.1 - 05/06/2013
+---------------------
+* BPM/Beat:
+  * Fixed a crash when not using BPMPROGRESSPROC callback
+  * Added a check for BPMPROC/BPMBEATPROC callbacks, if not available, returns BASS_ERROR_ILLPARAM error code
+
+2.4.10 - 02/06/2013
+-------------------
+* BASS_FX:
+   * Please see DSP and BPM sections for decprecated effects/functions.
+     To not break compatibility with BASS 2.4 version, these effects and functions will still remain in BASS_FX,
+     but are removed from documentations and will be totally removed from BASS_FX in the future.
+   * BASS_ERROR_FX_NODECODE error code *removed*, will return BASS_ERROR_DECODE instead (Tempo/Reverse/BPM/Beat)
+   * BASS_ERROR_FX_BPMINUSE error code *removed*, will return BASS_ERROR_ALREADY instead (BPM/Beat)
+   * Tempo and BPM functions updated to latest SoundTouch library version 1.7.1
+   * Added BASS_BFX_Linear2dB and BASS_BFX_dB2Linear macros to headers, for convenience.
+
+* Tempo:
+  * Multi-channel support is added, but:
+     * No SSE optimizations
+     * BASS_ATTRIB_TEMPO_OPTION_USE_AA_FILTER is by default set to FALSE on iOS, Android, WinCE and Linux ARM platforms for lower CPU usage
+     * Not part of SoundTouch library, sources will be sent to Olli Parviainen after BASS_FX release
+  * Sound quality improvements
+  * Improved output sound stream duration to match better with ideal duration
+  * Fixed BASS_ERROR_UNKNOWN issue with Windows 8 x64, posted in this thread:
+    http://www.un4seen.com/forum/?topic=14499.0
+
+* BPM:
+  * BASS_FX_BPM_Translate and all of its options, BASS_FX_BPM_TRAN_xxx, are *deprecated*
+  * BPMPROCESSPROC *renamed* to BPMPROGRESSPROC
+  * BPM example is updated to fit above changes
+  * Tuned detection algorithm
+  * Fixed detection bug in Android, WinCE & Linux ARM platforms, for returning odd values
+  * Fixed percents bug in BPMPROGRESSPROC
+  * Changed default min/max BPM window to SoundTouch's 29/200
+
+* Beat:
+  * Fixed regression since version 2.4.8 in BASS_FX_BPM_BeatDecodeGet function,
+    that would free a "chan" when detection is completed, as described in this thread:
+    http://www.un4seen.com/forum/?topic=2181.msg102805#msg102805
+
+* DSP:
+  * Ported all effects to Android, WinCE & Linux ARM platforms
+
+  * BASS_FX_BFX_ROTATE:
+        added new structure "BASS_BFX_ROTATE" with params:
+        "fRate"    - set the rotation rate/speed in Hz between channels
+        "lChannel" - multi-channel support, only for even number of channels
+
+  * BASS_FX_BFX_ECHO4:
+        added new effect and structure "BASS_BFX_ECHO4" with params:
+        "fDryMix"   - unaffected signal mix
+        "fWetMix"   - affected signal mix
+        "fFeedback" - output signal to feed back into input
+        "fDelay"    - delay seconds
+        "bStereo"   - even channels are echoed to each other if enabled
+        "lChannel"  - multi-channel support
+
+  * BASS_FX_BFX_ECHO        - *deprecated*, use BASS_FX_BFX_ECHO4
+  * BASS_FX_BFX_ECHO2       - *deprecated*, use BASS_FX_BFX_ECHO4
+  * BASS_FX_BFX_ECHO3       - *deprecated*, use BASS_FX_BFX_ECHO4
+  * BASS_FX_BFX_REVERB      - *deprecated*, use BASS_FX_BFX_ECHO4 with fFeedback enabled
+  * BASS_FX_BFX_FLANGER     - *deprecated*, use BASS_FX_BFX_CHORUS
+  * BASS_FX_BFX_COMPRESSOR  - *deprecated*, use BASS_FX_BFX_COMPRESSOR2
+  * BASS_FX_BFX_APF         - *deprecated*, use BASS_FX_BFX_BQF with BASS_BFX_BQF_ALLPASS filter
+  * BASS_FX_BFX_LPF         - *deprecated*, use 2x BASS_FX_BFX_BQF with BASS_BFX_BQF_LOWPASS filter and appropriate fQ values
+
+2.4.9 - 16/01/2013
+------------------
+* BASS_FX:
+  * WinCE version introduced (package bass_fx24-ce.zip) currently doesn't include most BASS_FX_BFX_xxx effects.
+  * Linux ARM version introduced (package bass_fx24-linux-arm.zip) currently doesn't include most BASS_FX_BFX_xxx effects.
+
+* DSP:
+  * Added more effects to Android, WinCE & Linux ARM ports:
+     BASS_FX_BFX_PEAKEQ
+     BASS_FX_BFX_MIX
+     BASS_FX_BFX_VOLUME_ENV
+
+* Tempo and Reverse:
+  * According to this request: http://www.un4seen.com/forum/?topic=13910
+    Added support for DECODETO option.
+
+* Tempo:
+  * iOS, WinCE & Linux ARM: Enabled the BASS_ATTRIB_TEMPO_OPTION_USE_QUICKALGO option on tempo
+    streams by default for lower CPU usage. See docs on how to disable it.
+
+* iOS: Added armv7s architecture support.
+
+2.4.8 - 31/07/2012
+------------------
+* BASS_FX:
+  * Android version introduced (package bass_fx24-android.zip)
+    currently doesn't include most BASS_FX_BFX_xxx effects.
+  * Delphi/Pascal unit: changed "user" param from "DWORD" to "Pointer"
+
+* BPM:
+  * Added "user" param to BASS_FX_BPM_DecodeGet and BPMPROCESSPROC (you have to recompile your project).
+  * BPM example is updated to fit above changes.
+  * According to this request: http://www.un4seen.com/forum/?topic=13319
+    Added support for BPM detection from the current position with BASS_FX_BPM_DecodeGet (startSec<0). 
+    
+* Beat:
+  * Couple of little fixes in beat detection.
+
+* Tempo:
+  * Android: Enabled the BASS_ATTRIB_TEMPO_OPTION_USE_QUICKALGO option on tempo
+    streams by default for lower CPU usage. See docs on how to disable it.
+
 2.4.7.1 - 01/07/2011
 --------------------
 * BASS_FX:
@@ -236,6 +397,9 @@ affected by a change to the BASS_FX interface are listed.
 * DSP:
    * Fixed a small issue in BASS_FXGetParameters for BASS_FX_BFX_VOLUME effect, as it would change the lChannel value
      when the global volume (lChannel=0) is requested.
+
+* OSX:
+   * x86_64 architecture support
 
 2.4.7 - 07/04/2011
 ------------------
@@ -972,12 +1136,17 @@ affected by a change to the BASS_FX interface are listed.
 Credits
 =======
 * Thanks a lot to - Ian Luck @ www.un4seen.com - for: 
-   + BASS - Best audio library!
-   + DSP (Echo/Reverb/Flanger/Dynamic AMP/Compressor 2/Volume Envelope) & Reverse source codes
-   + Tempo & Reverse 32-bit support
+   + BASS - Best Available Sound System!
+   + DSP source codes for Echo, Dynamic Amplification, Compressor and Volume Envelope
+   + Reverse playback source code
+   + SoundTouch algorithms implementation for Tempo/BPM
+   + Beat position algorithm fixes
+   + 8/16/32-bit support
+   + Fixed-point support
+   + Multi-channel support
    + Add-on support
    + MacOSX support
-   + Helping me so much with C/C++ and much more! :)
+   + Android support
 * Ian, you're the best programmer in the whole world!
 
 
@@ -997,62 +1166,103 @@ the website)... If you can't find an answer there, you can email:
 
 System - Desktop/PC
 ===================
-  -----------------------------------------
-  BASS_FX.DLL - developed and tested using:
-  -----------------------------------------
-  System     : Intel Core i7 860 2.8GHz 8MB, 4GB DDR3 1600MHz CL7
-               Intel Celeron 1.7 GHz, 256MB DDR 266MHz
+  ---------------------------------------------------
+  BASS_FX.DLL - Windows - developed and tested using:
+  ---------------------------------------------------
+  System     : Intel Core i7 Haswell 4770 3.9GHz 8MB, 16GB DDR3 1600MHz CL9
+               Intel Core i7 860 2.8GHz 8MB, 4GB DDR3 1600MHz CL7
+               VMware 10
 
   OS         : Microsoft Windows:
-                x86: 7 Ultimate, Vista Ultimate, XP Pro SP3, 2000 Pro SP4 & 98
-                x64: 7 Enterprise/Ultimate, Vista Ultimate SP1, XP Pro SP1
+                x86: 8, 7 Ultimate, Vista Ultimate, XP Pro SP3, 2000 Pro SP4 & 98
+                x64: 8.1 Pro, 7 Enterprise/Ultimate, Vista Ultimate SP1, XP Pro SP1
 
-  Sound Card : RealTek HD 7.1 (onboard) and Creative Vibra 128
+  Sound Card : RealTek HD 7.1 (onboard)
 
   Compiler   : x86: Microsoft Visual C++ v6.0 SP5 with a Processor Pack
                x64: Microsoft Visual C++ 2005 v8.0
 
   DirectX    : 11, 10, 9.0c and 7.0
-  BASS.DLL   : 2.4.6
+  BASS.DLL   : 2.4.11
 
-  ----------------------------------------------
-  LIBBASS_FX.DYLIB - developed and tested using:
-  ----------------------------------------------
-  System        : VMware 7
+  ----------------------------------------------------
+  LIBBASS_FX.DYLIB - OSX - developed and tested using:
+  ----------------------------------------------------
+  System        : VMware 10
 
   OS            : Apple Macintosh OS X:
-                   Intel Mac : 10.5.8 and 10.4.10
+                   Intel Mac : 10.9, 10.8.2, 10.5.8 and 10.4.10
                    PowerPC   : 10.3.9 and 10.4
 
   Compiler      : GCC 4.0.1
   IDE           : XCode 3.1.4
-  LIBBASS.DYLIB : 2.4.6
+  LIBBASS.DYLIB : 2.4.11
 
-  -------------------------------------------
-  LIBBASS_FX.SO - developed and tested using:
-  -------------------------------------------
-  System     : VMware 7
+  ---------------------------------------------------
+  LIBBASS_FX.SO - Linux - developed and tested using:
+  ---------------------------------------------------
+  System     : VMware 10
 
   OS         : Ubuntu Desktop x86 and x64 v8.04
 
   Compiler   : x86 and x64: GCC 4.2.4 (g++)
 
   IDE        : Code::Blocks v8.02
-  LIBBASS.SO : 2.4.6
+  LIBBASS.SO : 2.4.11
 
 
 System - Mobile/Portable
 ========================
-  ------------------------------------------
-  LIBBASS_FX.A - developed and tested using:
-  ------------------------------------------
-  System    : VMware 7
+  ------------------------------------------------
+  LIBBASS_FX.A - iOS - developed and tested using:
+  ------------------------------------------------
+  System    : VMware 10
 
-  OS        : Apple Macintosh OS X: Intel Mac 10.5.8
+  OS        : Apple Macintosh OS X: Intel Mac 10.9
 
-  Compiler  : GCC 4.2
-  IDE       : XCode 3.1.4
-  LIBBASS.A : 2.4.6
+  Compiler  : GCC 4.2 / LLVM
+  IDE       : XCode 3.1.4 / XCode 5.0.2 for armv7s/arm64 architectures
+  LIBBASS.A : 2.4.11
+
+  -----------------------------------------------------
+  LIBBASS_FX.SO - Android - developed and tested using:
+  -----------------------------------------------------
+  System     : Samsung Galaxy S3 GT-I9300
+               Samsung Galaxy S2 GT-I9100
+               Android Virtual Device
+
+  OS         : Android JB 4.1.1/2
+               Android ICS 4.0.3/4
+               Android GB 2.3.3
+
+  Compiler   : Android NDK R8: GCC 4.4.3
+
+  IDE        : Eclipse
+  LIBBASS.SO : 2.4.11
+
+  -------------------------------------------------
+  BASS_FX.DLL - WinCE - developed and tested using:
+  -------------------------------------------------
+  System   : GPS Device with CPU @ 372MHz
+             Pocket PC 2003 SE Emulator
+
+  OS       : Windows CE 5
+             Windows Mobile 2003 SE version 4.21.1088
+
+  Compiler : Microsoft Visual C++ 2005 v8.0
+  BASS.DLL : 2.4.11
+
+  -------------------------------------------------------
+  LIBBASS_FX.SO - Linux ARM - developed and tested using:
+  -------------------------------------------------------
+  System     : VMware 8
+
+  OS         : Ubuntu Desktop x86 v11.10
+
+  Compiler   : GCC: (crosstool-NG 1.15.2) 4.7.1 20120402 (prerelease)
+
+  IDE        : Code::Blocks v8.02
+  LIBBASS.SO : 2.4.11
 
 
 More Credits ;)
@@ -1065,18 +1275,24 @@ More Credits ;)
     The main source is based on - Manu Webber's - source code.
  @  http://www.un4seen.com/forum/?topic=1246.msg6484#msg6484
 
- *  Tempo/Pitch/Rate/BPM [SoundTouch v1.5.1pre]
-(c) Copyright (c) 2002-2010 Olli Parviainen
+ *  Tempo/Pitch/Rate/BPM [SoundTouch v1.8.0]
+(c) Copyright (c) 2002-2014 Olli Parviainen
  @  http://www.surina.net/soundtouch
  L  LGPL license
 
- *  Auto Wah, Echo 2/3, Phaser, Chorus, All Pass Filter, Compressor, Distortion
-(c) Copyright (c) 2001 Aleksey Smoli
+ *  Auto Wah, Chorus, Distortion, Echo (some parts from 1st algorithm) and Phaser
+(c) Copyright (c) 2000 Aleksey Smoli
  @  http://st.karelia.ru/~smlalx    (offline)
 
- *  Low Pass Filter
-(c) Zxform
- @  baltrax@hotmail.com
+ *  Freeverb
+(c) Copyright (c) 2000 Jezar at Dreampoint
+ @  http://www.dreampoint.co.uk
+ L  Public domain
+
+ *  Pitch shifting using FFT [smbPitchShift v1.2]
+(c) Copyright (c) 1999-2009 Stephan M. Bernsee <smb [AT] dspdimension [DOT] com>
+ @  http://www.dspdimension.com/admin/pitch-shifting-using-the-ft/
+ L  WOL license
 
  * BASS_FX is fully useable in commercial software, as long as credit is given.
 

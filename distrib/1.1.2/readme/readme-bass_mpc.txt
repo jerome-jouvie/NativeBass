@@ -1,6 +1,6 @@
 BASS_MPC 2.4
 
-© 2002-2006, MaresWEB (http://www.maresweb.de). All rights reserved.
+© 2002-2012, Sebastian Andersson (sebastian.andersson@gmail.com). All rights reserved.
 Portions © 2006, The Musepack Development Team. All rights reserved.
 
 All trademarks and other registered names contained in the BASS_MPC
@@ -29,8 +29,7 @@ which may result from the use of BASS_MPC.
 
 Costs
 =====
-The BASS_MPC library is free to use and distribute as long as you follow the guidelines
-of the LGPL.
+The BASS_MPC library is free to use and distribute.
 
 If you enjoy BASS_MPC, please consider donating money. You may use PayPal to make a donation:
 

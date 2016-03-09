@@ -1,6 +1,6 @@
 /*
 	BASSmix 2.4 C/C++ header file
-	Copyright (c) 2005-2011 Un4seen Developments Ltd.
+	Copyright (c) 2005-2015 Un4seen Developments Ltd.
 
 	See the BASSMIX.CHM file for more detailed documentation
 */
@@ -23,7 +23,6 @@ extern "C" {
 #endif
 
 // additional BASS_SetConfig option
-#define BASS_CONFIG_MIXER_FILTER	0x10600
 #define BASS_CONFIG_MIXER_BUFFER	0x10601
 #define BASS_CONFIG_MIXER_POSEX		0x10602
 #define BASS_CONFIG_SPLIT_BUFFER	0x10610
@@ -35,13 +34,15 @@ extern "C" {
 #define BASS_MIXER_POSEX		0x2000	// enable BASS_Mixer_ChannelGetPositionEx support
 
 // source flags
-#define BASS_MIXER_FILTER		0x1000	// resampling filter
 #define BASS_MIXER_BUFFER		0x2000	// buffer data for BASS_Mixer_ChannelGetData/Level
 #define BASS_MIXER_LIMIT		0x4000	// limit mixer processing to the amount available from this source
 #define BASS_MIXER_MATRIX		0x10000	// matrix mixing
 #define BASS_MIXER_PAUSE		0x20000	// don't process the source
 #define BASS_MIXER_DOWNMIX		0x400000 // downmix to stereo/mono
 #define BASS_MIXER_NORAMPIN		0x800000 // don't ramp-in the start
+
+// mixer attributes
+#define BASS_ATTRIB_MIXER_LATENCY	0x15000
 
 // splitter flags
 #define BASS_SPLIT_SLAVE		0x1000	// only read buffered data
@@ -79,11 +80,13 @@ BOOL BASSMIXDEF(BASS_Mixer_ChannelSetPosition)(DWORD handle, QWORD pos, DWORD mo
 QWORD BASSMIXDEF(BASS_Mixer_ChannelGetPosition)(DWORD handle, DWORD mode);
 QWORD BASSMIXDEF(BASS_Mixer_ChannelGetPositionEx)(DWORD channel, DWORD mode, DWORD delay);
 DWORD BASSMIXDEF(BASS_Mixer_ChannelGetLevel)(DWORD handle);
+BOOL BASSMIXDEF(BASS_Mixer_ChannelGetLevelEx)(DWORD handle, float *levels, float length, DWORD flags);
 DWORD BASSMIXDEF(BASS_Mixer_ChannelGetData)(DWORD handle, void *buffer, DWORD length);
 HSYNC BASSMIXDEF(BASS_Mixer_ChannelSetSync)(DWORD handle, DWORD type, QWORD param, SYNCPROC *proc, void *user);
 BOOL BASSMIXDEF(BASS_Mixer_ChannelRemoveSync)(DWORD channel, HSYNC sync);
-BOOL BASSMIXDEF(BASS_Mixer_ChannelSetMatrix)(DWORD handle, const float *matrix);
-BOOL BASSMIXDEF(BASS_Mixer_ChannelGetMatrix)(DWORD handle, float *matrix);
+BOOL BASSMIXDEF(BASS_Mixer_ChannelSetMatrix)(DWORD handle, const void *matrix);
+BOOL BASSMIXDEF(BASS_Mixer_ChannelSetMatrixEx)(DWORD handle, const void *matrix, float time);
+BOOL BASSMIXDEF(BASS_Mixer_ChannelGetMatrix)(DWORD handle, void *matrix);
 BOOL BASSMIXDEF(BASS_Mixer_ChannelSetEnvelope)(DWORD handle, DWORD type, const BASS_MIXER_NODE *nodes, DWORD count);
 BOOL BASSMIXDEF(BASS_Mixer_ChannelSetEnvelopePos)(DWORD handle, DWORD type, QWORD pos);
 QWORD BASSMIXDEF(BASS_Mixer_ChannelGetEnvelopePos)(DWORD handle, DWORD type, float *value);
