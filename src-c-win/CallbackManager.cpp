@@ -51,7 +51,7 @@
 #include "basswv.h"
 #include "bass_aac.h"
 #include "bass_ac3.h"
-#include "bass_alac.h"
+#include "bassalac.h"
 #include "bass_fx.h"
 #include "bass_mpc.h"
 #include "bass_spx.h"
@@ -153,7 +153,7 @@ void CALLBACK BPMPROC_BRIDGE(DWORD chan, float bpm, void * user) {
 	leave_jenv(attached);
 }
 
-void CALLBACK BPMPROCESSPROC_BRIDGE(DWORD chan, float percent) {
+void CALLBACK BPMPROCESSPROC_BRIDGE(DWORD chan, float percent, void* user) {
 	JNIEnv *java_env/* = 0*/;
 	bool attached = acquire_jenv(&java_env);
 	java_env->CallStaticVoidMethod(caller, callbackId[2], (jint)chan, (jfloat)percent);
@@ -268,7 +268,7 @@ BOOL CALLBACK FILESEEKPROC_BRIDGE(QWORD offset, void * user) {
 	return (BOOL)result_;
 }
 
-void CALLBACK MIDIINPROC_BRIDGE(DWORD device, double time, const void * buffer, DWORD length, void * user) {
+void CALLBACK MIDIINPROC_BRIDGE(DWORD device, double time, const BYTE * buffer, DWORD length, void * user) {
 	JNIEnv *java_env/* = 0*/;
 	bool attached = acquire_jenv(&java_env);
 	N2J_PTR2ADR(jbuffer, buffer, const void *);

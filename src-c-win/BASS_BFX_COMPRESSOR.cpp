@@ -3,11 +3,11 @@
  * 				NativeBass Project
  *
  * Want to use BASS (www.un4seen.com) in the Java language ? NativeBass is made for you.
- * Copyright © 2007-2011 Jérôme JOUVIE
+ * Copyright ï¿½ 2007-2011 Jï¿½rï¿½me JOUVIE
  *
  * Created on 02 jul. 2007
  * @version file v1.1.1
- * @author Jérôme JOUVIE (Jouvieje)
+ * @author Jï¿½rï¿½me JOUVIE (Jouvieje)
  * @site   http://jerome.jouvie.free.fr/
  * @mail   jerome.jouvie@gmail.com
  * 
@@ -51,7 +51,7 @@
 #include "basswv.h"
 #include "bass_aac.h"
 #include "bass_ac3.h"
-#include "bass_alac.h"
+#include "bassalac.h"
 #include "bass_fx.h"
 #include "bass_mpc.h"
 #include "bass_spx.h"

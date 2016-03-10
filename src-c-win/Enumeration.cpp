@@ -51,7 +51,7 @@
 #include "basswv.h"
 #include "bass_aac.h"
 #include "bass_ac3.h"
-#include "bass_alac.h"
+#include "bassalac.h"
 #include "bass_fx.h"
 #include "bass_mpc.h"
 #include "bass_spx.h"
@@ -360,11 +360,11 @@ JNIEXPORT jint JNICALL Java_jouvieje_bass_enumerations_EnumerationJNI_get_1EAX_1
 				/* STREAMPROC_SPECIAL */
 
 JNIEXPORT jint JNICALL Java_jouvieje_bass_enumerations_EnumerationJNI_get_1STREAMPROC_1DUMMY(JNIEnv *java_env, jclass jcls) {
-	return (jint)STREAMPROC_DUMMY;
+	return (jint)((jlong)STREAMPROC_DUMMY);
 }
 
 JNIEXPORT jint JNICALL Java_jouvieje_bass_enumerations_EnumerationJNI_get_1STREAMPROC_1PUSH(JNIEnv *java_env, jclass jcls) {
-	return (jint)STREAMPROC_PUSH;
+	return (jint)((jlong)STREAMPROC_PUSH);
 }
 
 

@@ -3,11 +3,11 @@
  * 				NativeBass Project
  *
  * Want to use BASS (www.un4seen.com) in the Java language ? NativeBass is made for you.
- * Copyright © 2007-2011 Jérôme JOUVIE
+ * Copyright ï¿½ 2007-2011 Jï¿½rï¿½me JOUVIE
  *
  * Created on 02 jul. 2007
  * @version file v1.1.1
- * @author Jérôme JOUVIE (Jouvieje)
+ * @author Jï¿½rï¿½me JOUVIE (Jouvieje)
  * @site   http://jerome.jouvie.free.fr/
  * @mail   jerome.jouvie@gmail.com
  * 
@@ -54,7 +54,7 @@
 #include "basswv.h"
 #include "bass_aac.h"
 #include "bass_ac3.h"
-#include "bass_alac.h"
+#include "bassalac.h"
 #include "bass_fx.h"
 #include "bass_mpc.h"
 #include "bass_spx.h"
@@ -67,7 +67,7 @@ extern jboolean attachJavaVM(JNIEnv *java_env);
 
 void CALLBACK BPMBEATPROC_BRIDGE(DWORD chan, double beatpos, void * user);
 void CALLBACK BPMPROC_BRIDGE(DWORD chan, float bpm, void * user);
-void CALLBACK BPMPROCESSPROC_BRIDGE(DWORD chan, float percent);
+void CALLBACK BPMPROCESSPROC_BRIDGE(DWORD chan, float percent, void* user);
 void CALLBACK DOWNLOADPROC_BRIDGE(const void * buffer, DWORD length, void * user);
 void CALLBACK DSPPROC_BRIDGE(HDSP handle, DWORD channel, void * buffer, DWORD length, void * user);
 BOOL CALLBACK ENCODECLIENTPROC_BRIDGE(HENCODE handle, BOOL connect, const char * client, char * headers, void * user);
@@ -78,7 +78,7 @@ void CALLBACK FILECLOSEPROC_BRIDGE(void * user);
 QWORD CALLBACK FILELENPROC_BRIDGE(void * user);
 DWORD CALLBACK FILEREADPROC_BRIDGE(void * buffer, DWORD length, void * user);
 BOOL CALLBACK FILESEEKPROC_BRIDGE(QWORD offset, void * user);
-void CALLBACK MIDIINPROC_BRIDGE(DWORD device, double time, const void * buffer, DWORD length, void * user);
+void CALLBACK MIDIINPROC_BRIDGE(DWORD device, double time, const BYTE * buffer, DWORD length, void * user);
 BOOL CALLBACK RECORDPROC_BRIDGE(HRECORD handle, const void * buffer, DWORD length, void * user);
 DWORD CALLBACK STREAMPROC_BRIDGE(HSTREAM handle, void * buffer, DWORD length, void * user);
 void CALLBACK SYNCPROC_BRIDGE(HSYNC handle, DWORD channel, DWORD data, void * user);

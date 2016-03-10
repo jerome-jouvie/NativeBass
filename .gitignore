@@ -10,3 +10,7 @@ local.properties
 lint.xml
 #os
 *.DS_Store
+
+#different
+build/
+*/nbproject/private/
