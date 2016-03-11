@@ -142,272 +142,272 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libsrc-c-win.${CND_DLIB_EXT}: ${OBJEC
 ${OBJECTDIR}/BASS_3DVECTOR.o: BASS_3DVECTOR.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_3DVECTOR.o BASS_3DVECTOR.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_3DVECTOR.o BASS_3DVECTOR.cpp
 
 ${OBJECTDIR}/BASS_BFX_APF.o: BASS_BFX_APF.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_APF.o BASS_BFX_APF.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_APF.o BASS_BFX_APF.cpp
 
 ${OBJECTDIR}/BASS_BFX_AUTOWAH.o: BASS_BFX_AUTOWAH.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_AUTOWAH.o BASS_BFX_AUTOWAH.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_AUTOWAH.o BASS_BFX_AUTOWAH.cpp
 
 ${OBJECTDIR}/BASS_BFX_BQF.o: BASS_BFX_BQF.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_BQF.o BASS_BFX_BQF.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_BQF.o BASS_BFX_BQF.cpp
 
 ${OBJECTDIR}/BASS_BFX_CHORUS.o: BASS_BFX_CHORUS.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_CHORUS.o BASS_BFX_CHORUS.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_CHORUS.o BASS_BFX_CHORUS.cpp
 
 ${OBJECTDIR}/BASS_BFX_COMPRESSOR.o: BASS_BFX_COMPRESSOR.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_COMPRESSOR.o BASS_BFX_COMPRESSOR.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_COMPRESSOR.o BASS_BFX_COMPRESSOR.cpp
 
 ${OBJECTDIR}/BASS_BFX_COMPRESSOR2.o: BASS_BFX_COMPRESSOR2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_COMPRESSOR2.o BASS_BFX_COMPRESSOR2.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_COMPRESSOR2.o BASS_BFX_COMPRESSOR2.cpp
 
 ${OBJECTDIR}/BASS_BFX_DAMP.o: BASS_BFX_DAMP.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_DAMP.o BASS_BFX_DAMP.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_DAMP.o BASS_BFX_DAMP.cpp
 
 ${OBJECTDIR}/BASS_BFX_DISTORTION.o: BASS_BFX_DISTORTION.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_DISTORTION.o BASS_BFX_DISTORTION.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_DISTORTION.o BASS_BFX_DISTORTION.cpp
 
 ${OBJECTDIR}/BASS_BFX_ECHO.o: BASS_BFX_ECHO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO.o BASS_BFX_ECHO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO.o BASS_BFX_ECHO.cpp
 
 ${OBJECTDIR}/BASS_BFX_ECHO2.o: BASS_BFX_ECHO2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO2.o BASS_BFX_ECHO2.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO2.o BASS_BFX_ECHO2.cpp
 
 ${OBJECTDIR}/BASS_BFX_ECHO3.o: BASS_BFX_ECHO3.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO3.o BASS_BFX_ECHO3.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ECHO3.o BASS_BFX_ECHO3.cpp
 
 ${OBJECTDIR}/BASS_BFX_ENV_NODE.o: BASS_BFX_ENV_NODE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ENV_NODE.o BASS_BFX_ENV_NODE.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_ENV_NODE.o BASS_BFX_ENV_NODE.cpp
 
 ${OBJECTDIR}/BASS_BFX_FLANGER.o: BASS_BFX_FLANGER.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_FLANGER.o BASS_BFX_FLANGER.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_FLANGER.o BASS_BFX_FLANGER.cpp
 
 ${OBJECTDIR}/BASS_BFX_LPF.o: BASS_BFX_LPF.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_LPF.o BASS_BFX_LPF.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_LPF.o BASS_BFX_LPF.cpp
 
 ${OBJECTDIR}/BASS_BFX_MIX.o: BASS_BFX_MIX.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_MIX.o BASS_BFX_MIX.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_MIX.o BASS_BFX_MIX.cpp
 
 ${OBJECTDIR}/BASS_BFX_PEAKEQ.o: BASS_BFX_PEAKEQ.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_PEAKEQ.o BASS_BFX_PEAKEQ.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_PEAKEQ.o BASS_BFX_PEAKEQ.cpp
 
 ${OBJECTDIR}/BASS_BFX_PHASER.o: BASS_BFX_PHASER.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_PHASER.o BASS_BFX_PHASER.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_PHASER.o BASS_BFX_PHASER.cpp
 
 ${OBJECTDIR}/BASS_BFX_REVERB.o: BASS_BFX_REVERB.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_REVERB.o BASS_BFX_REVERB.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_REVERB.o BASS_BFX_REVERB.cpp
 
 ${OBJECTDIR}/BASS_BFX_VOLUME.o: BASS_BFX_VOLUME.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_VOLUME.o BASS_BFX_VOLUME.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_VOLUME.o BASS_BFX_VOLUME.cpp
 
 ${OBJECTDIR}/BASS_BFX_VOLUME_ENV.o: BASS_BFX_VOLUME_ENV.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_VOLUME_ENV.o BASS_BFX_VOLUME_ENV.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_BFX_VOLUME_ENV.o BASS_BFX_VOLUME_ENV.cpp
 
 ${OBJECTDIR}/BASS_CHANNELINFO.o: BASS_CHANNELINFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_CHANNELINFO.o BASS_CHANNELINFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_CHANNELINFO.o BASS_CHANNELINFO.cpp
 
 ${OBJECTDIR}/BASS_DEVICEINFO.o: BASS_DEVICEINFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_DEVICEINFO.o BASS_DEVICEINFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_DEVICEINFO.o BASS_DEVICEINFO.cpp
 
 ${OBJECTDIR}/BASS_FILEPROCS.o: BASS_FILEPROCS.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_FILEPROCS.o BASS_FILEPROCS.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_FILEPROCS.o BASS_FILEPROCS.cpp
 
 ${OBJECTDIR}/BASS_INFO.o: BASS_INFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_INFO.o BASS_INFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_INFO.o BASS_INFO.cpp
 
 ${OBJECTDIR}/BASS_MIDI_DEVICEINFO.o: BASS_MIDI_DEVICEINFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_DEVICEINFO.o BASS_MIDI_DEVICEINFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_DEVICEINFO.o BASS_MIDI_DEVICEINFO.cpp
 
 ${OBJECTDIR}/BASS_MIDI_EVENT.o: BASS_MIDI_EVENT.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_EVENT.o BASS_MIDI_EVENT.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_EVENT.o BASS_MIDI_EVENT.cpp
 
 ${OBJECTDIR}/BASS_MIDI_FONT.o: BASS_MIDI_FONT.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_FONT.o BASS_MIDI_FONT.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_FONT.o BASS_MIDI_FONT.cpp
 
 ${OBJECTDIR}/BASS_MIDI_FONTINFO.o: BASS_MIDI_FONTINFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_FONTINFO.o BASS_MIDI_FONTINFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_FONTINFO.o BASS_MIDI_FONTINFO.cpp
 
 ${OBJECTDIR}/BASS_MIDI_MARK.o: BASS_MIDI_MARK.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_MARK.o BASS_MIDI_MARK.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIDI_MARK.o BASS_MIDI_MARK.cpp
 
 ${OBJECTDIR}/BASS_MIXER_NODE.o: BASS_MIXER_NODE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIXER_NODE.o BASS_MIXER_NODE.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_MIXER_NODE.o BASS_MIXER_NODE.cpp
 
 ${OBJECTDIR}/BASS_PLUGINFORM.o: BASS_PLUGINFORM.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_PLUGINFORM.o BASS_PLUGINFORM.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_PLUGINFORM.o BASS_PLUGINFORM.cpp
 
 ${OBJECTDIR}/BASS_PLUGININFO.o: BASS_PLUGININFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_PLUGININFO.o BASS_PLUGININFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_PLUGININFO.o BASS_PLUGININFO.cpp
 
 ${OBJECTDIR}/BASS_RECORDINFO.o: BASS_RECORDINFO.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_RECORDINFO.o BASS_RECORDINFO.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_RECORDINFO.o BASS_RECORDINFO.cpp
 
 ${OBJECTDIR}/BASS_SAMPLE.o: BASS_SAMPLE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_SAMPLE.o BASS_SAMPLE.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BASS_SAMPLE.o BASS_SAMPLE.cpp
 
 ${OBJECTDIR}/Bass.o: Bass.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Bass.o Bass.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Bass.o Bass.cpp
 
 ${OBJECTDIR}/BufferPointerUtils.o: BufferPointerUtils.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BufferPointerUtils.o BufferPointerUtils.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BufferPointerUtils.o BufferPointerUtils.cpp
 
 ${OBJECTDIR}/CallbackManager.o: CallbackManager.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CallbackManager.o CallbackManager.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CallbackManager.o CallbackManager.cpp
 
 ${OBJECTDIR}/Enumeration.o: Enumeration.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enumeration.o Enumeration.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enumeration.o Enumeration.cpp
 
 ${OBJECTDIR}/HCHANNEL.o: HCHANNEL.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HCHANNEL.o HCHANNEL.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HCHANNEL.o HCHANNEL.cpp
 
 ${OBJECTDIR}/JavaObject.o: JavaObject.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JavaObject.o JavaObject.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JavaObject.o JavaObject.cpp
 
 ${OBJECTDIR}/NativeBass.o: NativeBass.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NativeBass.o NativeBass.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NativeBass.o NativeBass.cpp
 
 ${OBJECTDIR}/Pointer.o: Pointer.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pointer.o Pointer.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pointer.o Pointer.cpp
 
 ${OBJECTDIR}/TAG_APE_BINARY.o: TAG_APE_BINARY.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_APE_BINARY.o TAG_APE_BINARY.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_APE_BINARY.o TAG_APE_BINARY.cpp
 
 ${OBJECTDIR}/TAG_BEXT.o: TAG_BEXT.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_BEXT.o TAG_BEXT.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_BEXT.o TAG_BEXT.cpp
 
 ${OBJECTDIR}/TAG_CART.o: TAG_CART.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CART.o TAG_CART.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CART.o TAG_CART.cpp
 
 ${OBJECTDIR}/TAG_CART_TIMER.o: TAG_CART_TIMER.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CART_TIMER.o TAG_CART_TIMER.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CART_TIMER.o TAG_CART_TIMER.cpp
 
 ${OBJECTDIR}/TAG_CA_CODEC.o: TAG_CA_CODEC.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CA_CODEC.o TAG_CA_CODEC.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_CA_CODEC.o TAG_CA_CODEC.cpp
 
 ${OBJECTDIR}/TAG_FLAC_CUE.o: TAG_FLAC_CUE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE.o TAG_FLAC_CUE.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE.o TAG_FLAC_CUE.cpp
 
 ${OBJECTDIR}/TAG_FLAC_CUE_TRACK.o: TAG_FLAC_CUE_TRACK.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE_TRACK.o TAG_FLAC_CUE_TRACK.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE_TRACK.o TAG_FLAC_CUE_TRACK.cpp
 
 ${OBJECTDIR}/TAG_FLAC_CUE_TRACK_INDEX.o: TAG_FLAC_CUE_TRACK_INDEX.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE_TRACK_INDEX.o TAG_FLAC_CUE_TRACK_INDEX.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_CUE_TRACK_INDEX.o TAG_FLAC_CUE_TRACK_INDEX.cpp
 
 ${OBJECTDIR}/TAG_FLAC_PICTURE.o: TAG_FLAC_PICTURE.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_PICTURE.o TAG_FLAC_PICTURE.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_FLAC_PICTURE.o TAG_FLAC_PICTURE.cpp
 
 ${OBJECTDIR}/TAG_ID3.o: TAG_ID3.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_ID3.o TAG_ID3.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TAG_ID3.o TAG_ID3.cpp
 
 ${OBJECTDIR}/Utils.o: Utils.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_WIN -DNATIVE2JAVA_TARGET_64 -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Utils.o Utils.cpp
+	$(COMPILE.cc) -g -DNATIVE2JAVA_TARGET_64 -DNATIVE2JAVA_TARGET_WIN -I/C/Program\ Files/Java/jdk1.8.0_72/include -I/C/Program\ Files/Java/jdk1.8.0_72/include/win32 -I../includes  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Utils.o Utils.cpp
 
 # Subprojects
 .build-subprojects:
