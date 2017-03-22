@@ -1,33 +1,40 @@
 BASSmix 2.4
-Copyright (c) 2005-2011 Un4seen Developments Ltd. All rights reserved.
+Copyright (c) 2005-2015 Un4seen Developments Ltd. All rights reserved.
 
 Files that you should have found in the BASSmix package
 =======================================================
 Win32 version
 -------------
 BASSMIX.TXT     This file
-BASSMIX.DLL     The BASSmix module
+BASSMIX.DLL     BASSmix module
 BASSMIX.CHM     BASSmix documentation
-C\              C/C++ API...
+X64\
+  BASSMIX.DLL     64-bit BASSmix module
+C\              C/C++ API and examples...
   BASSMIX.H       BASSmix C/C++ header file
   BASSMIX.LIB     BASSmix import library
-  BASSMIX.DSW     Visual C++ workspace for examples
+  BASSMIX.DSW     Visual C++ 6 workspace for examples
+  BASSMIX.SLN     Visual C++ 2005 (and above) solution for examples
   MAKEFILE        Makefile for all examples
   MAKEFILE.IN     Makefile helper macros
+  X64\
+    BASSMIX.LIB     64-bit BASSmix import library
   MULTI\          Multiple device example
     MULTI.C
     MULTI.RC
     MULTI.DSP
+    MULTI.VCPROJ
     MAKEFILE
   SPEAKERS\       Multi-speaker example
     SPEAKERS.C
     SPEAKERS.RC
     SPEAKERS.DSP
+    SPEAKERS.VCPROJ
     MAKEFILE
   BIN\            Precompiled examples
     MULTI.EXE
     SPEAKERS.EXE
-VB\             Visual Basic API...
+VB\             Visual Basic API and examples...
   BASSMIX.BAS     BASSmix Visual Basic module
   MULTI\          Multiple device example
     PRJMULTI.VBP
@@ -36,7 +43,7 @@ VB\             Visual Basic API...
   SPEAKERS\       Multi-speaker example
     PRJSPEAKERS.VBP
     FRMSPEAKERS.FRM
-DELPHI\         Delphi API...
+DELPHI\         Delphi API and examples...
   BASSMIX.PAS     BASSmix Delphi unit
   SPEAKERS\       Multi-speaker example
     SPEAKERS.DPR
@@ -49,14 +56,15 @@ NOTE: To run the example EXEs, first you will have to copy BASSMIX.DLL and
 NOTE: To build the examples, you will need to copy the BASS API into the
       same directory as the BASSmix API.
 
-MacOSX version
---------------
+OSX version
+-----------
 BASSMIX.TXT     This file
-LIBBASSMIX.DYLIB  The BASSmix module
+LIBBASSMIX.DYLIB  BASSmix module
 BASSMIX.CHM     BASSmix documentation
 BASSMIX.H       BASSmix C/C++ header file
 MAKEFILE        Makefile for all examples
 MAKEFILE.IN     Makefile helper macros
+BASSMIX.XCODEPROJ  Xcode project for examples
 MULTI\          Multiple device example
   MULTI.C
   MAKEFILE
@@ -72,11 +80,11 @@ NOTE: To build the examples, you will need to copy the BASS API into the
 Linux version
 -------------
 BASSMIX.TXT     This file
-LIBBASSMIX.SO   The BASSmix module
+LIBBASSMIX.SO   BASSmix module
 BASSMIX.CHM     BASSmix documentation
 BASSMIX.H       BASSmix C/C++ header file
-X64
-  LIBBASSMIX.SO   64-bit version of BASSmix module
+X64\
+  LIBBASSMIX.SO   64-bit BASSmix module
 
 
 What's the point?
@@ -89,13 +97,16 @@ BASS channel into multiple channels.
 
 Requirements
 ============
-BASS 2.4 is required.
+BASS (version 2.4.11 or above) is required.
 
 
 Using BASSmix
 =============
 The usage information in the BASS.TXT file (from the BASS package) is also
 applicable to BASSmix and other add-ons.
+
+As well as the examples included in this package, several of the examples
+included in the BASSWASAPI package also use BASSmix.
 
 TIP: The BASSmix.CHM file should be put in the same directory as the BASS.CHM
      file, so that the BASSmix documentation can be accessed from within the
@@ -133,6 +144,31 @@ There are of course bug fixes and other little improvements made along
 the way too! To make upgrading simpler, all functions affected by a
 change to the BASSmix interface are listed.
 
+2.4.8 - 13/3/2015
+-----------------
+* Accounting for custom output latency in source position/data/level retrieval
+	BASS_ATTRIB_MIXER_LATENCY (BASS_ChannelSetAttribute option)
+	BASS_Mixer_ChannelGetPosition
+	BASS_Mixer_ChannelGetData
+	BASS_Mixer_ChannelGetLevel/Ex
+* Ramped matrix changes
+	BASS_Mixer_ChannelSetMatrixEx
+* Speaker assignment with matrix mixing
+	BASS_SPEAKER_xxx (BASS_Mixer_StreamAddChannel/Ex and BASS_Mixer_ChannelFlags flags)
+* Extended level retrieval support
+	BASS_Mixer_ChannelGetLevelEx
+* Absolute source buffer length option
+	BASS_CONFIG_MIXER_BUFFER
+* Length of resampled output rounded to nearest sample
+
+2.4.7 - 8/5/2012
+----------------
+* Improved and adjustable sample rate conversion quality
+	BASS_ATTRIB_SRC (BASS_ChannelSetAttribute option)
+* Additional filtering option removed (superseded by BASS_ATTRIB_SRC)
+	BASS_MIXER_FILTER
+	BASS_CONFIG_MIXER_FILTER
+
 2.4.6 - 26/9/2011
 -----------------
 * Retrieval of all splitters set on a channel
@@ -148,6 +184,7 @@ change to the BASSmix interface are listed.
 * Limiting of envelope syncs to a particular envelope type
 	BASS_SYNC_MIXER_ENVELOPE/NODE (BASS_Mixer_ChannelSetSync type)
 * More precise mixer sample rate conversion
+* Xcode examples project added for OSX
 
 2.4.5 - 17/12/2010
 ------------------

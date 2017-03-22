@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>CallbackManager.h</itemPath>
+      <itemPath>Includes.h</itemPath>
+      <itemPath>JavaObject.h</itemPath>
+      <itemPath>Native2Java_Platform.h</itemPath>
+      <itemPath>Native2Java_Types.h</itemPath>
+      <itemPath>NativeBass.h</itemPath>
+      <itemPath>Pointer.h</itemPath>
+      <itemPath>Utils.h</itemPath>
+      <itemPath>jouvieje_bass_BassInit.h</itemPath>
+      <itemPath>jouvieje_bass_BassJNI.h</itemPath>
+      <itemPath>jouvieje_bass_enumerations_EnumerationJNI.h</itemPath>
+      <itemPath>jouvieje_bass_structures_StructureJNI.h</itemPath>
+      <itemPath>jouvieje_bass_utils_MiscJNI.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>BASS_3DVECTOR.cpp</itemPath>
+      <itemPath>BASS_BFX_APF.cpp</itemPath>
+      <itemPath>BASS_BFX_AUTOWAH.cpp</itemPath>
+      <itemPath>BASS_BFX_BQF.cpp</itemPath>
+      <itemPath>BASS_BFX_CHORUS.cpp</itemPath>
+      <itemPath>BASS_BFX_COMPRESSOR.cpp</itemPath>
+      <itemPath>BASS_BFX_COMPRESSOR2.cpp</itemPath>
+      <itemPath>BASS_BFX_DAMP.cpp</itemPath>
+      <itemPath>BASS_BFX_DISTORTION.cpp</itemPath>
+      <itemPath>BASS_BFX_ECHO.cpp</itemPath>
+      <itemPath>BASS_BFX_ECHO2.cpp</itemPath>
+      <itemPath>BASS_BFX_ECHO3.cpp</itemPath>
+      <itemPath>BASS_BFX_ENV_NODE.cpp</itemPath>
+      <itemPath>BASS_BFX_FLANGER.cpp</itemPath>
+      <itemPath>BASS_BFX_LPF.cpp</itemPath>
+      <itemPath>BASS_BFX_MIX.cpp</itemPath>
+      <itemPath>BASS_BFX_PEAKEQ.cpp</itemPath>
+      <itemPath>BASS_BFX_PHASER.cpp</itemPath>
+      <itemPath>BASS_BFX_REVERB.cpp</itemPath>
+      <itemPath>BASS_BFX_VOLUME.cpp</itemPath>
+      <itemPath>BASS_BFX_VOLUME_ENV.cpp</itemPath>
+      <itemPath>BASS_CHANNELINFO.cpp</itemPath>
+      <itemPath>BASS_DEVICEINFO.cpp</itemPath>
+      <itemPath>BASS_FILEPROCS.cpp</itemPath>
+      <itemPath>BASS_INFO.cpp</itemPath>
+      <itemPath>BASS_MIDI_DEVICEINFO.cpp</itemPath>
+      <itemPath>BASS_MIDI_EVENT.cpp</itemPath>
+      <itemPath>BASS_MIDI_FONT.cpp</itemPath>
+      <itemPath>BASS_MIDI_FONTINFO.cpp</itemPath>
+      <itemPath>BASS_MIDI_MARK.cpp</itemPath>
+      <itemPath>BASS_MIXER_NODE.cpp</itemPath>
+      <itemPath>BASS_PLUGINFORM.cpp</itemPath>
+      <itemPath>BASS_PLUGININFO.cpp</itemPath>
+      <itemPath>BASS_RECORDINFO.cpp</itemPath>
+      <itemPath>BASS_SAMPLE.cpp</itemPath>
+      <itemPath>Bass.cpp</itemPath>
+      <itemPath>BufferPointerUtils.cpp</itemPath>
+      <itemPath>CallbackManager.cpp</itemPath>
+      <itemPath>Enumeration.cpp</itemPath>
+      <itemPath>HCHANNEL.cpp</itemPath>
+      <itemPath>JavaObject.cpp</itemPath>
+      <itemPath>NativeBass.cpp</itemPath>
+      <itemPath>Pointer.cpp</itemPath>
+      <itemPath>TAG_APE_BINARY.cpp</itemPath>
+      <itemPath>TAG_BEXT.cpp</itemPath>
+      <itemPath>TAG_CART.cpp</itemPath>
+      <itemPath>TAG_CART_TIMER.cpp</itemPath>
+      <itemPath>TAG_CA_CODEC.cpp</itemPath>
+      <itemPath>TAG_FLAC_CUE.cpp</itemPath>
+      <itemPath>TAG_FLAC_CUE_TRACK.cpp</itemPath>
+      <itemPath>TAG_FLAC_CUE_TRACK_INDEX.cpp</itemPath>
+      <itemPath>TAG_FLAC_PICTURE.cpp</itemPath>
+      <itemPath>TAG_ID3.cpp</itemPath>
+      <itemPath>Utils.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <architecture>2</architecture>
+        </cTool>
+        <ccTool>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>C:/Program Files/Java/jdk1.8.0_72/include</pElem>
+            <pElem>C:/Program Files/Java/jdk1.8.0_72/include/win32</pElem>
+            <pElem>../includes</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NATIVE2JAVA_TARGET_64</Elem>
+            <Elem>NATIVE2JAVA_TARGET_WIN</Elem>
+          </preprocessorList>
+        </ccTool>
+        <asmTool>
+          <architecture>2</architecture>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>lib64/bass.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_aac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_ac3.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_fx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_mpc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_spx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassalac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassenc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassflac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassmidi.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassmix.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/basswv.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="BASS_3DVECTOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_APF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_AUTOWAH.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_BQF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_CHORUS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DAMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DISTORTION.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ENV_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_FLANGER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_LPF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_MIX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PEAKEQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PHASER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_REVERB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME_ENV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_CHANNELINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_FILEPROCS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_INFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_EVENT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONTINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_MARK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIXER_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGINFORM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGININFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_RECORDINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_SAMPLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Bass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BufferPointerUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enumeration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HCHANNEL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JavaObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JavaObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Platform.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NativeBass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NativeBass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pointer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TAG_APE_BINARY.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_BEXT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART_TIMER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CA_CODEC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK_INDEX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_PICTURE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_ID3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_enumerations_EnumerationJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_structures_StructureJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_utils_MiscJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>C:/Program Files/Java/jdk1.8.0_72/include</pElem>
+            <pElem>C:/Program Files/Java/jdk1.8.0_72/include/win32</pElem>
+            <pElem>../includes</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NATIVE2JAVA_TARGET_64</Elem>
+            <Elem>NATIVE2JAVA_TARGET_WIN</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>lib64/bass.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_aac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_ac3.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_fx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_mpc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bass_spx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassalac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassenc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassflac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassmidi.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/bassmix.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib64/basswv.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="BASS_3DVECTOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_APF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_AUTOWAH.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_BQF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_CHORUS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DAMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DISTORTION.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ENV_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_FLANGER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_LPF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_MIX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PEAKEQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PHASER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_REVERB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME_ENV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_CHANNELINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_FILEPROCS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_INFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_EVENT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONTINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_MARK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIXER_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGINFORM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGININFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_RECORDINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_SAMPLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Bass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BufferPointerUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enumeration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HCHANNEL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JavaObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JavaObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Platform.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NativeBass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NativeBass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pointer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TAG_APE_BINARY.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_BEXT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART_TIMER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CA_CODEC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK_INDEX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_PICTURE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_ID3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_enumerations_EnumerationJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_structures_StructureJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_utils_MiscJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug32" type="2" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>MinGW-32|MinGW</compilerSet>
+        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <architecture>1</architecture>
+        </cTool>
+        <ccTool>
+          <architecture>1</architecture>
+        </ccTool>
+        <fortranCompilerTool>
+          <architecture>1</architecture>
+        </fortranCompilerTool>
+        <asmTool>
+          <architecture>1</architecture>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>lib32/bass.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_aac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_ac3.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_fx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_mpc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_spx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassalac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassenc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassflac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassmidi.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassmix.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/basswv.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="BASS_3DVECTOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_APF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_AUTOWAH.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_BQF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_CHORUS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DAMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DISTORTION.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ENV_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_FLANGER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_LPF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_MIX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PEAKEQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PHASER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_REVERB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME_ENV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_CHANNELINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_FILEPROCS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_INFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_EVENT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONTINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_MARK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIXER_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGINFORM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGININFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_RECORDINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_SAMPLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Bass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BufferPointerUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enumeration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HCHANNEL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JavaObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JavaObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Platform.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NativeBass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NativeBass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pointer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TAG_APE_BINARY.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_BEXT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART_TIMER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CA_CODEC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK_INDEX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_PICTURE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_ID3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_enumerations_EnumerationJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_structures_StructureJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_utils_MiscJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release32" type="2" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>MinGW-32|MinGW</compilerSet>
+        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>lib32/bass.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_aac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_ac3.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_fx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_mpc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bass_spx.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassalac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassenc.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassflac.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassmidi.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/bassmix.lib</linkerLibFileItem>
+            <linkerLibFileItem>lib32/basswv.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="BASS_3DVECTOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_APF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_AUTOWAH.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_BQF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_CHORUS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_COMPRESSOR2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DAMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_DISTORTION.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ECHO3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_ENV_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_FLANGER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_LPF.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_MIX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PEAKEQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_PHASER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_REVERB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_BFX_VOLUME_ENV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_CHANNELINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_FILEPROCS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_INFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_DEVICEINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_EVENT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_FONTINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIDI_MARK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_MIXER_NODE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGINFORM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_PLUGININFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_RECORDINFO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BASS_SAMPLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Bass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BufferPointerUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CallbackManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enumeration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HCHANNEL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JavaObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JavaObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Platform.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Native2Java_Types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NativeBass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NativeBass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pointer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TAG_APE_BINARY.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_BEXT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CART_TIMER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_CA_CODEC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_CUE_TRACK_INDEX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_FLAC_PICTURE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TAG_ID3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_BassJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jouvieje_bass_enumerations_EnumerationJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_structures_StructureJNI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="jouvieje_bass_utils_MiscJNI.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

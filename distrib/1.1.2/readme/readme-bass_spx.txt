@@ -1,6 +1,6 @@
 BASS_SPX 2.4
 
-© 2002-2006, MaresWEB (http://www.maresweb.de). All rights reserved.
+© 2002-2012, Sebastian Andersson (sebastian.andersson@gmail.com). All rights reserved.
 Portions © 2002-2006, Jean-Marc Valin, Xiph.Org Foundation. All rights reserved.
 
 All trademarks and other registered names contained in the BASS_SPX
@@ -30,7 +30,9 @@ which may result from the use of BASS_SPX.
 Costs
 =====
 The BASS_SPX library is free to use and distribute as long as you follow the guidelines
-of the LGPL.
+of the Speex license:
+
+http://www.xiph.org/licenses/bsd/speex/
 
 If you enjoy BASS_SPX, please consider donating money. You may use PayPal to make a donation:
 

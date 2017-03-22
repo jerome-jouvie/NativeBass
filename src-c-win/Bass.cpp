@@ -51,7 +51,7 @@
 #include "basswv.h"
 #include "bass_aac.h"
 #include "bass_ac3.h"
-#include "bass_alac.h"
+#include "bassalac.h"
 #include "bass_fx.h"
 #include "bass_mpc.h"
 #include "bass_spx.h"
@@ -2134,7 +2134,7 @@ JNIEXPORT jfloat JNICALL Java_jouvieje_bass_BassJNI_Bass_1BASS_1FX_1BPM_1DecodeG
 	DWORD minMaxBPM = (DWORD)jminMaxBPM;
 	DWORD flags = (DWORD)jflags;
 
-	float result_ = BASS_FX_BPM_DecodeGet(chan, startSec, endSec, minMaxBPM, flags, jproc == 0 ? NULL : BPMPROCESSPROC_BRIDGE);
+	float result_ = BASS_FX_BPM_DecodeGet(chan, startSec, endSec, minMaxBPM, flags, jproc == 0 ? NULL : BPMPROCESSPROC_BRIDGE, NULL);
 
 	return (jfloat)result_;
 }
